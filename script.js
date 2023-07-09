@@ -2,8 +2,10 @@
 var ektrB_clone=document.getElementById("ektr_businesses").cloneNode(true)
 var metaB_clone=document.getElementById("meta_businesses").cloneNode(true)
 var title=document.getElementById('title')
-
+var Y;
+var QBGd; //Ημερήσια Παραγωγή Βιοαερίου
 var currentTab = 0; // Current tab is set to be the first tab (0)
+var CH4;
 
 document.getElementsByClassName("step")[currentTab].classList.add('current');
 showTab(currentTab); // Display the current tab
@@ -34,13 +36,13 @@ function showTab(n) {
     document.getElementById("prevBtn").style.display = "inline";
   }
   if (n == (x.length - 2)) {
-    document.getElementById("nextBtn").innerHTML = "Calculate";
+    document.getElementById("nextBtn").innerHTML = "Υπολογισμός";
     
   }else if(n==(x.length-1)){
-    document.getElementById("nextBtn").innerHTML='Restart'
+    document.getElementById("nextBtn").innerHTML="Ξεκίνα απ'την αρχή"
   } 
   else {
-    document.getElementById("nextBtn").innerHTML = "Next";
+    document.getElementById("nextBtn").innerHTML = "Επόμενο";
   }
   //display correct step indicator
   stepHandler(n)
@@ -124,12 +126,15 @@ function clickEventHandler(currentTab){
     
     //Handle next button
         var nextBtn=document.getElementById('nextBtn')
-        if(nextBtn.innerHTML=="Next"){
+        if(nextBtn.innerHTML=="Επόμενο"){
             nextBtn.onclick=(e)=>{
         var count=0;
+        
         for(var i=0;i<inputBtns.length;i++){
             if(inputBtns[i].classList.contains('changeColor')){
+                console.log("Im here")
                 count++
+                calculateData(inputBtns[i])
                 
             }
         }
@@ -174,20 +179,20 @@ function clickEventHandler(currentTab){
         }
             
     }
-    }else if(nextBtn.innerHTML=="Calculate" && currentTab==2){
+    }else if(nextBtn.innerHTML=="Υπολογισμός" && currentTab==2){
         nextBtn.onclick=(e)=>{
             
 
-            var res=calculate()
+            var res=ypologismos()
             nextPrev(1)
             clickEventHandler(currentTab+1)
             
-            document.getElementById('biogas_res').innerHTML="Δυναμικό παραγωγής βιοαερίου: "+res
-            document.getElementById('apof_ekp_CO2').innerHTML='Αποφυγή εκπομπών CO2: '
-            document.getElementById('kostos_kat').innerHTML='Κόστος κατασκευής: '
-            document.getElementById('kostos_leit').innerHTML='Κόστος λειτουργίας: '
+            document.getElementById('biogas_res').innerHTML="Δυναμικό παραγωγής βιοαερίου: "+res[0]
+            document.getElementById('apof_ekp_CO2').innerHTML='Αποφυγή εκπομπών CO2: '+res[1]
+            document.getElementById('kostos_kat').innerHTML='Κόστος κατασκευής: '+res[2]
+            document.getElementById('kostos_leit').innerHTML='Κόστος λειτουργίας: '+res[3]
         }
-    }else if(nextBtn.innerHTML=='Restart' && currentTab==3){
+    }else if(nextBtn.innerHTML=="Ξεκίνα απ'την αρχή" && currentTab==3){
         nextBtn.onclick=(e)=>{
             nextPrev(-3)
             clickEventHandler(currentTab-3)
@@ -209,27 +214,96 @@ function clickEventHandler(currentTab){
         
     }
 }
-//Calculate biogas
-function calculate(){
+//Υπολογισμός δεδομένων Y, CH4
+function calculateData(button){
+    
+    switch(button.value){
+        case "Αιγοπροβάτων":
+            Y=150
+            CH4=55
+            break;
+        case "Πουλερικών":
+            CH4=60
+            Y=30
+            break;
+        case "Χοιρινών":
+            CH4=55
+            Y=6
+            break;
+        case "Βοοειδών Γαλακτοπαραγωγής":
+            CH4=60
+            Y=20
+            break;
+        case "Βοοειδών Κρεατ.":
+            CH4=55
+            Y=50
+            break;
+        case "Παραγωγή Ελαιόλαδου":
+            CH4=65
+            Y=70
+            break;
+        case "Τυροκόμιση Γάλακτος":
+            CH4=50
+            Y=30
+            break;
+        case "Προιόντα Αλευρόμυλων":
+            CH4=60
+            Y=800
+            break;
+        case "Επεξεργασία Κρέατος":
+            CH4=70
+            Y=80
+            break;
+    }
+
+    return Y,CH4
+}
+//Υπολογισμός Δυναμικού Παραγωγής Βιοαερίου
+function ypologismos(){
     var numOfAnimals = parseInt(document.getElementById('numAnimals').value)
     
-    var posotites=parseInt(document.getElementById('posotites').value)
-    var biogas =posotites+numOfAnimals
+    var hmeresLeitourgias= parseInt(document.getElementById('hmeresleit').value)
     
-    return biogas
+    var posotites=parseInt(document.getElementById('posotites').value)
+    QBGd=Y*posotites
+    console.log(Y)
+
+    var GHG =1.87*QBGd*CH4
+    
+    var VDG=QBGd/1.35
+    var a= -40*Math.log(VDG)+1000
+    var CAPEX=a*VDG
+
+    var kw=(-0.008*Math.log(VDG)+0.082)*VDG
+    var OPEX_electr=20*kw*hmeresLeitourgias*0.15
+    var OPEX_mech=-0.0046*Math.pow(VDG,2)+27.5*VDG-34.8
+    var OPEX_monitor=1800*Math.log(VDG)-5300
+    var OPEX_labor=10000*Math.log(VDG)-50000
+    
+    if(VDG<300){
+        OPEX_labor=0;
+    }
+    var OPEX=OPEX_electr+OPEX_mech+OPEX_monitor+OPEX_labor
+    return [QBGd,GHG,CAPEX,OPEX]
+
     
 }
-//Change fieldset title of current tab
+
+
+//Υπολογισμός Κόστους Λειτουργίας
+
+
+//Αλλαγή τίτλου στην κάθε σελίδα
 function changeTitle(currentTab){
     switch(currentTab){
         case 0: 
-            title.innerHTML='Επέλεξε είδος επιχείρησης' 
+            title.innerHTML='Επιλέξτε είδος επιχείρησης' 
             break;
         case 1: 
-            title.innerHTML='Επέλεξε επιχείρηση'
+            title.innerHTML='Επιλέξτε επιχείρηση'
             break;
         case 2: 
-            title.innerHTML='Δώσε τα απαραίτητα δεδομένα'
+            title.innerHTML='Δώστε τα απαραίτητα δεδομένα'
             break;
         case 3: 
             title.innerHTML='Αποτελέσματα'

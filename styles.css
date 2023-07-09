@@ -13,42 +13,55 @@
   fieldset {
     padding: 20px 40px;
     border: none;
+    
+  }
+  .line {
+
+    height: 0;
+    width: calc(100% + 84px); /* Adjust based on the padding value */
+    margin-left: -42px; /* Adjust based on the padding value */
+    overflow: visible;
   }
   hr{
     width: 100%;
   }
   #regForm {
     
-    background-color: #ffffff;
+    background-color: #4472c4;
     margin: auto;
-    font-family: cursive;
-    padding: 40px;
-    padding-top: 10px;
+    
+    padding-bottom: 10px;
     margin-top: 50px;
     width: 50%;
     min-width: 300px;
     border-radius: 30px;
   }
+  
   /* center title and put logo to the right side of form */
   .title{
     display: flex;
     justify-content: space-between;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 10px;
   }
   
   
   #logo{
     
     width: 85px;
-    background-color: #1F75FE;
+    background-color: #4472c4;
     
     align-self: center;
     
   }
-
+  .results{
+    color: rgb(241, 235, 235);
+  }
   #title {
     text-align: center; 
     margin-bottom: 20px; 
-    
+    color: rgb(241, 235, 235);
     
   }
   input {
@@ -61,18 +74,20 @@
     margin: 0 auto;
     text-align: center;
     width: 35%;
+    font-family: cursive;
+    border: 1px solid ;
     
   }
   .inputBtns:hover{
     cursor: pointer;
-    opacity: 0.8;
-    background-color: #1F75FE;
-    color: white;
+    /*opacity: 0.8;*/
+    background-color: #1a2c4b;
+    color: rgb(241, 235, 235);
   }
   /* on click */
   .changeColor{
-    background-color: #1F75FE;
-    color: white;
+    background-color: #1a2c4b;
+    color: rgb(241, 235, 235);
   }
   
   /* Mark input boxes that gets an error on validation: */
@@ -88,40 +103,47 @@
   }
   
   button {
-    background-color: #1F75FE;
-    color: #ffffff;
+    
+    
     border: none;
     padding: 10px 20px;
     font-size: 17px;
-    font-family: Raleway;
+    font-family: cursive;
     cursor: pointer;
   }
   
   button:hover {
-    opacity: 0.8;
+    background-color: #1a2c4b;
+    color: rgb(241, 235, 235);
   }
   
   #prevBtn {
-    background-color: #bbbbbb;
-    
+    background-color: rgb(241, 235, 235);
+    border: 1px solid;
     
   }
   #nextBtn{
+    color: black;
     
-    background-color: #1F75FE;
+    border: 1px solid;
   }
-  
-  
+  #nextBtn:hover{
+    color: rgb(241, 235, 235);
+  }
+  #prevBtn:hover{
+    background-color: #1a2c4b;
+    color:rgb(241, 235, 235);
+  }
   /* Make circles that indicate the steps of the form: */
   .step {
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbbbbb;
+    background-color: rgb(241, 235, 235);
     border: none;  
     border-radius: 50%;
     display: inline-block;
-    opacity: 0.5;
+    
   }
   
   .step.active {
@@ -130,7 +152,7 @@
   
   /* Mark the steps that are current and valid: */
   .step.current {
-    background-color: #1F75FE;
+    background-color: #1a2c4b;
   }
   
   .items  {
@@ -139,19 +161,8 @@
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    
-    
-    
-    
-
   }
-  /* responsive */
-    @media screen and (max-width:1150px) {
-        body{
-            background: repeat ;
-        }
-    
-  }
+  
   
   
   
