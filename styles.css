@@ -242,6 +242,21 @@
     }
 
   }
-  
+  @media screen and (max-width:500px) {
+    
+    .inputBtns{
+      width: 65%;
+    }
+    
+    #results_tab{
+      width: 100%;
+      transform: translate(0%);
+    }
+    .results{
+      text-align: left;
+      margin-left: 2px;
+    }
+
+  }
   
   
