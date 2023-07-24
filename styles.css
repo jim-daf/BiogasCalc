@@ -7,7 +7,7 @@
     background: url("images/Biogas_Back.jpg") no-repeat center center fixed;
     background-size: cover;
     align-items: center;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
   }
   fieldset {
@@ -46,7 +46,13 @@
     padding: 10px;
   }
   
-  
+  #results_tab{
+    background-color: white;
+    border: 1px solid black;
+    width: 50%;
+    transform: translate(50%);
+    
+  }
   #logo{
     
     width: 85px;
@@ -56,7 +62,7 @@
     
   }
   .results{
-    color: rgb(241, 235, 235);
+    color: black;
   }
   #title {
     text-align: center; 
@@ -162,8 +168,83 @@
     margin-right: auto;
     text-align: left;
   }
-  
-  
+  @media screen and (max-width:1800px) {
+    #regForm{
+      width: 80%;
+    }
+    .inputBtns{
+      width: 25%;
+    }
+    #headtitle{
+      font-size: 20px;
+      
+    }
+    #title{
+      font-size: 20px;
+    }
+    #results_tab{
+      width: 60%;
+      transform: translate(35%);
+    }
+    .results{
+      text-align: left;
+      margin-left: 5px;
+    }
+  }
+  @media screen and (max-width:1500px) {
+    #regForm{
+      width: 80%;
+    }
+    .inputBtns{
+      width: 35%;
+    }
+    #headtitle{
+      font-size: 20px;
+      
+    }
+    #title{
+      font-size: 20px;
+    }
+    #results_tab{
+      width: 60%;
+      transform: translate(35%);
+    }
+    .results{
+      text-align: left;
+      margin-left: 5px;
+    }
+  }
+  @media screen and (max-width:1200px) {
+    
+    .inputBtns{
+      width: 45%;
+    }
+    
+  }
+  @media screen and (max-width:700px) {
+    #regForm{
+      width: 97%;
+    }
+    .inputBtns{
+      width: 55%;
+    }
+    #headtitle{
+      font-size: 18px;
+      
+    }
+    #title{
+      font-size: 18px;
+    }
+    #results_tab{
+      width: 100%;
+      transform: translate(0%);
+    }
+    .results{
+      text-align: left;
+      margin-left: 2px;
+    }
+
+  }
   
   
   

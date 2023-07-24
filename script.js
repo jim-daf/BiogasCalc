@@ -291,7 +291,7 @@ function ypologismos(){
         OPEX_labor=0;
     }
     var OPEX=OPEX_electr+OPEX_mech+OPEX_monitor+OPEX_labor
-    return [QBGd,GHG,CAPEX,OPEX]
+    return [QBGd,GHG.toFixed(3),CAPEX.toFixed(3),OPEX.toFixed(3)]
 
     
 }
