@@ -6,7 +6,7 @@ var Y;
 var QBGd; //Ημερήσια Παραγωγή Βιοαερίου
 var currentTab = 0; // Current tab is set to be the first tab (0)
 var CH4;
-
+var VDG;
 document.getElementsByClassName("step")[currentTab].classList.add('current');
 showTab(currentTab); // Display the current tab
 
@@ -187,10 +187,10 @@ function clickEventHandler(currentTab){
             nextPrev(1)
             clickEventHandler(currentTab+1)
             
-            document.getElementById('biogas_res').innerHTML="Δυναμικό παραγωγής βιοαερίου: "+res[0]
-            document.getElementById('apof_ekp_CO2').innerHTML='Αποφυγή εκπομπών CO2: '+res[1]
-            document.getElementById('kostos_kat').innerHTML='Κόστος κατασκευής: '+res[2]
-            document.getElementById('kostos_leit').innerHTML='Κόστος λειτουργίας: '+res[3]
+            document.getElementById('biogas_res').innerHTML="Δυναμικό παραγωγής βιοαερίου: "+res[0]+" m^3/d"
+            document.getElementById('apof_ekp_CO2').innerHTML='Αποφυγή εκπομπών CO2: '+res[1]+" kg/year"
+            document.getElementById('kostos_kat').innerHTML='Κόστος κατασκευής: '+res[2]+" €"
+            document.getElementById('kostos_leit').innerHTML='Κόστος λειτουργίας: '+res[3]+" €/year"
         }
     }else if(nextBtn.innerHTML=="Ξεκίνα απ'την αρχή" && currentTab==3){
         nextBtn.onclick=(e)=>{
@@ -220,38 +220,38 @@ function calculateData(button){
     switch(button.value){
         case "Αιγοπροβάτων":
             Y=150
-            CH4=55
+            CH4=0.55
             break;
         case "Πουλερικών":
-            CH4=60
+            CH4=0.60
             Y=30
             break;
         case "Χοιρινών":
-            CH4=55
+            CH4=0.55
             Y=6
             break;
         case "Βοοειδών Γαλακτοπαραγωγής":
-            CH4=60
+            CH4=0.60
             Y=20
             break;
         case "Βοοειδών Κρεατ.":
-            CH4=55
+            CH4=0.55
             Y=50
             break;
         case "Παραγωγή Ελαιόλαδου":
-            CH4=65
+            CH4=0.65
             Y=70
             break;
         case "Τυροκόμιση Γάλακτος":
-            CH4=50
+            CH4=0.50
             Y=30
             break;
         case "Προιόντα Αλευρόμυλων":
-            CH4=60
+            CH4=0.60
             Y=800
             break;
         case "Επεξεργασία Κρέατος":
-            CH4=70
+            CH4=0.70
             Y=80
             break;
     }
@@ -267,10 +267,11 @@ function ypologismos(){
     var posotites=parseInt(document.getElementById('posotites').value)
     QBGd=Y*posotites
     console.log(Y)
-
-    var GHG =1.87*QBGd*CH4
+    var QBGyr=QBGd*365;
+    var GHG =1.87*QBGyr*CH4*hmeresLeitourgias
     
-    var VDG=QBGd/1.35
+    VDG=QBGd/1.35
+    
     var a= -40*Math.log(VDG)+1000
     var CAPEX=a*VDG
 
@@ -279,7 +280,13 @@ function ypologismos(){
     var OPEX_mech=-0.0046*Math.pow(VDG,2)+27.5*VDG-34.8
     var OPEX_monitor=1800*Math.log(VDG)-5300
     var OPEX_labor=10000*Math.log(VDG)-50000
-    
+    console.log("VDG: ",VDG)
+    console.log("KW: ",kw)
+    console.log("OPEX_electr: ",OPEX_electr)
+    console.log("Opex_Mech: ",OPEX_mech)
+    console.log("Opex_monitor: ",OPEX_monitor)
+    console.log("Opex_Labor: ",OPEX_labor)
+    console.log("A:",a)
     if(VDG<300){
         OPEX_labor=0;
     }
