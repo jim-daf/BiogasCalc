@@ -73,14 +73,12 @@
   input {
     padding: 10px;
     font-size: 17px;
-    font-family: Raleway;
     border: 1px solid #aaaaaa;
   }
   .inputBtns{
     margin: 0 auto;
     text-align: center;
     width: 35%;
-    font-family: cursive;
     border: 1px solid ;
     
   }
