@@ -163,7 +163,15 @@
     
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
+    text-align: center;
+    
+  }
+  .items input{
+    width: 290px;
+    
+  }
+  .items label{
+    visibility: hidden;
   }
   @media screen and (max-width:1800px) {
     
@@ -186,7 +194,7 @@
   }
   @media screen and (max-width:1500px) {
     #regForm{
-      width: 80%;
+      width: 70%;
     }
     .inputBtns{
       width: 35%;
@@ -206,6 +214,7 @@
       text-align: left;
       margin-left: 5px;
     }
+    
   }
   @media screen and (max-width:1200px) {
     
