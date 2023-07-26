@@ -166,12 +166,8 @@
     text-align: left;
   }
   @media screen and (max-width:1800px) {
-    #regForm{
-      width: 80%;
-    }
-    .inputBtns{
-      width: 25%;
-    }
+    
+    
     #headtitle{
       font-size: 20px;
       
