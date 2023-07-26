@@ -234,7 +234,7 @@ function calculateData(button){
             CH4=0.60
             Y=20
             break;
-        case "Βοοειδών Κρεατ.":
+        case "Βοοειδών Κρεατοπαραγωγής":
             CH4=0.55
             Y=50
             break;
