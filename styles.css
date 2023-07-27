@@ -107,14 +107,14 @@
   }
   
   button {
-    
-    
     border: none;
     padding: 10px 20px;
     font-size: 17px;
     cursor: pointer;
   }
-  
+  .pagination{
+    float: right;
+  }
   button:hover {
     background-color: #1a2c4b;
     color: rgb(241, 235, 235);
@@ -129,6 +129,7 @@
     color: black;
     
     border: 1px solid;
+    
   }
   #nextBtn:hover{
     color: rgb(241, 235, 235);
@@ -214,14 +215,24 @@
       text-align: left;
       margin-left: 5px;
     }
+    .pagination_buttons{
+      font-size: 14px;
+    }
+    
     
   }
   @media screen and (max-width:1200px) {
-    
+
     .inputBtns{
       width: 45%;
     }
-    
+    .pagination{
+      float: none;
+    }
+    #nextBtn{
+      float: right;
+    }
+
   }
   @media screen and (max-width:700px) {
     #regForm{

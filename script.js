@@ -70,13 +70,14 @@ function nextPrev(n) {
 function validateForm() {
   // This function deals with validation of the form fields
   
-  var x, y, i, valid = true;
+  var x, y, hmeresLeitourgias, i, valid = true;
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
+  
   // A loop that checks every input field in the current tab:
   for (i = 0; i < y.length; i++) {
     // If a field is empty...
-    if (y[i].value == ""  ) {
+    if (y[i].value == "" || y[i].value<0 || (y[i].placeholder=="Εισάγεται ημέρες λειτουργίας" && y[i].value>365) ) {
       // add an "invalid" class to the field:
       y[i].className += " invalid";
       // and set the current valid status to false
