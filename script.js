@@ -129,69 +129,69 @@ function clickEventHandler(currentTab){
         var nextBtn=document.getElementById('nextBtn')
         if(nextBtn.innerHTML=="Επόμενο"){
             nextBtn.onclick=(e)=>{
-        var count=0;
-        
-        for(var i=0;i<inputBtns.length;i++){
-            if(inputBtns[i].classList.contains('changeColor')){
-                console.log("Im here")
-                count++
-                calculateData(inputBtns[i])
+                var count=0;
                 
-            }
-        }
-        if(count==0 && inputBtns.length!=0){
-            alert("Επιλέξτε κάποιο απτα απαιτούμενα πεδία")
-        }else if(inputBtns.length==0 && validateForm()){
-            nextPrev(1)
-            clickEventHandler(currentTab+1)
-            
-        }else if(!validateForm()) {
-            console.log("invalid")
-        }else{
-            
-            
-            if(document.getElementById('metapoihsh').classList.contains('changeColor') && document.getElementById('ektr_businesses')){
-                
-                
-                document.getElementById("ektr_businesses").remove()
-                if(document.getElementById("meta_businesses")==null){
-                    console.log(metaB_clone)
-                    document.getElementById('fieldset').insertBefore(metaB_clone,document.getElementsByClassName("tab")[1])
+                for(var i=0;i<inputBtns.length;i++){
+                    if(inputBtns[i].classList.contains('changeColor')){
+                        console.log("Im here")
+                        count++
+                        calculateData(inputBtns[i])
+                        
+                    }
                 }
-                
-                nextPrev(1)
-                clickEventHandler(currentTab+1)
-                
-            }else if(document.getElementById('ektrofi').classList.contains('changeColor') && document.getElementById('meta_businesses')){
-                document.getElementById('meta_businesses').remove()
-                if(document.getElementById("ektr_businesses")==null){
+                if(count==0 && inputBtns.length!=0){
+                    alert("Επιλέξτε κάποιο απτα απαιτούμενα πεδία")
+                }else if(inputBtns.length==0 && validateForm()){
+                    nextPrev(1)
+                    clickEventHandler(currentTab+1)
                     
-                    document.getElementById('fieldset').insertBefore(ektrB_clone,document.getElementsByClassName("tab")[1])
+                }else if(!validateForm()) {
+                    console.log("invalid")
+                }else{
+                    
+                    
+                    if(document.getElementById('metapoihsh').classList.contains('changeColor') && document.getElementById('ektr_businesses')){
+                        
+                        
+                        document.getElementById("ektr_businesses").remove()
+                        if(document.getElementById("meta_businesses")==null){
+                            console.log(metaB_clone)
+                            document.getElementById('fieldset').insertBefore(metaB_clone,document.getElementsByClassName("tab")[1])
+                        }
+                        
+                        nextPrev(1)
+                        clickEventHandler(currentTab+1)
+                        
+                    }else if(document.getElementById('ektrofi').classList.contains('changeColor') && document.getElementById('meta_businesses')){
+                        document.getElementById('meta_businesses').remove()
+                        if(document.getElementById("ektr_businesses")==null){
+                            
+                            document.getElementById('fieldset').insertBefore(ektrB_clone,document.getElementsByClassName("tab")[1])
+                        }
+                        nextPrev(1)
+                        clickEventHandler(currentTab+1)
+                        
+                    }else{
+                        nextPrev(1)
+                        clickEventHandler(currentTab+1)
+                        
+                    }
+                    
                 }
-                nextPrev(1)
-                clickEventHandler(currentTab+1)
-                
-            }else{
-                nextPrev(1)
-                clickEventHandler(currentTab+1)
-                
-            }
-            
-        }
             
     }
     }else if(nextBtn.innerHTML=="Υπολογισμός" && currentTab==2){
         nextBtn.onclick=(e)=>{
+            if(validateForm()){
+                var res=ypologismos()
+                nextPrev(1)
+                clickEventHandler(currentTab+1)
+                document.getElementById('biogas_res').innerHTML="Δυναμικό παραγωγής βιοαερίου: "+res[0]+" m^3/d"
+                document.getElementById('apof_ekp_CO2').innerHTML='Αποφυγή εκπομπών CO2: '+res[1]+" kg/year"
+                document.getElementById('kostos_kat').innerHTML='Κόστος κατασκευής: '+res[2]+" €"
+                document.getElementById('kostos_leit').innerHTML='Κόστος λειτουργίας: '+res[3]+" €/year"
+            }
             
-
-            var res=ypologismos()
-            nextPrev(1)
-            clickEventHandler(currentTab+1)
-            
-            document.getElementById('biogas_res').innerHTML="Δυναμικό παραγωγής βιοαερίου: "+res[0]+" m^3/d"
-            document.getElementById('apof_ekp_CO2').innerHTML='Αποφυγή εκπομπών CO2: '+res[1]+" kg/year"
-            document.getElementById('kostos_kat').innerHTML='Κόστος κατασκευής: '+res[2]+" €"
-            document.getElementById('kostos_leit').innerHTML='Κόστος λειτουργίας: '+res[3]+" €/year"
         }
     }else if(nextBtn.innerHTML=="Ξεκίνα απ'την αρχή" && currentTab==3){
         nextBtn.onclick=(e)=>{
