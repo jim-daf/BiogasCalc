@@ -1,12 +1,14 @@
 
 var ektrB_clone=document.getElementById("ektr_businesses").cloneNode(true)
 var metaB_clone=document.getElementById("meta_businesses").cloneNode(true)
+var numAnimals_clone=document.getElementById('numOfAnimals').cloneNode(true)
 var title=document.getElementById('title')
 var Y;
 var QBGd; //Ημερήσια Παραγωγή Βιοαερίου
 var currentTab = 0; // Current tab is set to be the first tab (0)
 var CH4;
 var VDG;
+
 document.getElementsByClassName("step")[currentTab].classList.add('current');
 showTab(currentTab); // Display the current tab
 
@@ -70,14 +72,14 @@ function nextPrev(n) {
 function validateForm() {
   // This function deals with validation of the form fields
   
-  var x, y, hmeresLeitourgias, i, valid = true;
+  var x, y, i, valid = true;
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
   
   // A loop that checks every input field in the current tab:
   for (i = 0; i < y.length; i++) {
     // If a field is empty...
-    if (y[i].value == "" || y[i].value<0 || (y[i].placeholder=="Εισάγετε ημέρες λειτουργίας" && y[i].value>365) ) {
+    if (y[i].value == "" || y[i].value<0 || (i==2 && y[i].value>365) ) {
       // add an "invalid" class to the field:
       y[i].className += " invalid";
       // and set the current valid status to false
@@ -129,14 +131,13 @@ function clickEventHandler(currentTab){
         var nextBtn=document.getElementById('nextBtn')
         if(nextBtn.innerHTML=="Επόμενο"){
             nextBtn.onclick=(e)=>{
+                
                 var count=0;
                 
                 for(var i=0;i<inputBtns.length;i++){
                     if(inputBtns[i].classList.contains('changeColor')){
-                        console.log("Im here")
                         count++
                         calculateData(inputBtns[i])
-                        
                     }
                 }
                 if(count==0 && inputBtns.length!=0){
@@ -144,32 +145,36 @@ function clickEventHandler(currentTab){
                 }else if(inputBtns.length==0 && validateForm()){
                     nextPrev(1)
                     clickEventHandler(currentTab+1)
-                    
                 }else if(!validateForm()) {
                     console.log("invalid")
                 }else{
-                    
-                    
                     if(document.getElementById('metapoihsh').classList.contains('changeColor') && document.getElementById('ektr_businesses')){
-                        
-                        
+                        document.getElementById('calc').removeChild(document.getElementById('numOfAnimals'))
                         document.getElementById("ektr_businesses").remove()
                         if(document.getElementById("meta_businesses")==null){
-                            console.log(metaB_clone)
                             document.getElementById('fieldset').insertBefore(metaB_clone,document.getElementsByClassName("tab")[1])
+                            
                         }
                         
                         nextPrev(1)
                         clickEventHandler(currentTab+1)
                         
+                        
                     }else if(document.getElementById('ektrofi').classList.contains('changeColor') && document.getElementById('meta_businesses')){
+                        if(!document.getElementById('calc').contains(document.getElementById('numOfAnimals'))){
+                            document.getElementById('calc').insertBefore(numAnimals_clone,document.getElementById('calc').childNodes[0])
+                        }
+                        
                         document.getElementById('meta_businesses').remove()
                         if(document.getElementById("ektr_businesses")==null){
                             
                             document.getElementById('fieldset').insertBefore(ektrB_clone,document.getElementsByClassName("tab")[1])
+                            
                         }
+                        
                         nextPrev(1)
                         clickEventHandler(currentTab+1)
+                        
                         
                     }else{
                         nextPrev(1)
@@ -186,7 +191,7 @@ function clickEventHandler(currentTab){
                 var res=ypologismos()
                 nextPrev(1)
                 clickEventHandler(currentTab+1)
-                document.getElementById('biogas_res').innerHTML="Δυναμικό παραγωγής βιοαερίου: "+res[0]+" m^3/d"
+                document.getElementById('biogas_res').innerHTML="Δυναμικό παραγωγής βιοαερίου: "+res[0]+" m<sup>3</sup>/d"
                 document.getElementById('apof_ekp_CO2').innerHTML='Αποφυγή εκπομπών CO2: '+res[1]+" kg/year"
                 document.getElementById('kostos_kat').innerHTML='Κόστος κατασκευής: '+res[2]+" €"
                 document.getElementById('kostos_leit').innerHTML='Κόστος λειτουργίας: '+res[3]+" €/year"
@@ -214,6 +219,8 @@ function clickEventHandler(currentTab){
         document.getElementsByClassName("step")[currentTab].classList.remove("current");
         
     }
+
+    
 }
 //Υπολογισμός δεδομένων Y, CH4
 function calculateData(button){
@@ -261,7 +268,7 @@ function calculateData(button){
 }
 //Υπολογισμός Δυναμικού Παραγωγής Βιοαερίου
 function ypologismos(){
-    var numOfAnimals = parseInt(document.getElementById('numAnimals').value)
+    //var numOfAnimals = parseInt(document.getElementById('numAnimals').value)
     
     var hmeresLeitourgias= parseInt(document.getElementById('hmeresleit').value)
     
