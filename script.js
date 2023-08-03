@@ -318,7 +318,7 @@ function changeTitle(currentTab){
             title.innerHTML='Επιλέξτε επιχείρηση'
             break;
         case 2: 
-            title.innerHTML='Δώστε τα απαραίτητα δεδομένα <div style="font-weight:normal; font-size:10px;">(Ποσότητες αποβλήτων <span style="text-decoration:underline; font-style:italic;">ημερισίως</span> και ημέρες λειτουργίες <span style="text-decoration:underline; font-style:italic;">ετησίως</span>)</div>'
+            title.innerHTML='Δώστε τα απαραίτητα δεδομένα <div style="font-weight:normal; font-size:10px;">(Ποσότητες αποβλήτων <span style="text-decoration:underline; font-style:italic;">ημερισίως</span> και ημέρες λειτουργίας <span style="text-decoration:underline; font-style:italic;">ετησίως</span>)</div>'
             break;
         case 3: 
             title.innerHTML='Αποτελέσματα'
