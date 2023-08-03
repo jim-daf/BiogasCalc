@@ -191,10 +191,10 @@ function clickEventHandler(currentTab){
                 var res=ypologismos()
                 nextPrev(1)
                 clickEventHandler(currentTab+1)
-                document.getElementById('biogas_res').innerHTML="Δυναμικό παραγωγής βιοαερίου: "+res[0]+" m<sup>3</sup>/d"
-                document.getElementById('apof_ekp_CO2').innerHTML='Αποφυγή εκπομπών CO2: '+res[1]+" kg/year"
-                document.getElementById('kostos_kat').innerHTML='Κόστος κατασκευής: '+res[2]+" €"
-                document.getElementById('kostos_leit').innerHTML='Κόστος λειτουργίας: '+res[3]+" €/year"
+                document.getElementById('biogas_res').innerHTML="Δυναμικό παραγωγής βιοαερίου: <span style='color: #8cc63f'>"+res[0]+"</span> m<sup>3</sup>/d"
+                document.getElementById('apof_ekp_CO2').innerHTML="Αποφυγή εκπομπών CO2: <span style='color: #8cc63f'>"+res[1]+"</span> kg/year"
+                document.getElementById('kostos_kat').innerHTML="Κόστος κατασκευής: <span style='color: #8cc63f'>"+res[2]+"</span> €"
+                document.getElementById('kostos_leit').innerHTML="Κόστος λειτουργίας: <span style='color: #8cc63f'>"+res[3]+"</span> €/year"
             }
             
         }
@@ -318,7 +318,7 @@ function changeTitle(currentTab){
             title.innerHTML='Επιλέξτε επιχείρηση'
             break;
         case 2: 
-            title.innerHTML='Δώστε τα απαραίτητα δεδομένα'
+            title.innerHTML='Δώστε τα απαραίτητα δεδομένα <div style="font-weight:normal; font-size:10px;">(Ποσότητες αποβλήτων <span style="text-decoration:underline; font-style:italic;">ημερισίως</span> και ημέρες λειτουργίες <span style="text-decoration:underline; font-style:italic;">ετησίως</span>)</div>'
             break;
         case 3: 
             title.innerHTML='Αποτελέσματα'

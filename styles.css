@@ -172,9 +172,9 @@
     width: 290px;
     
   }
-  .items label{
+  /*.items label{
     visibility: hidden;
-  }
+  }*/
   @media screen and (max-width:1800px) {
     
     
