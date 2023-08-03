@@ -81,6 +81,7 @@
     width: 35%;
     border: 1px solid ;
     
+    
   }
   .inputBtns:hover{
     cursor: pointer;
@@ -224,7 +225,7 @@
   @media screen and (max-width:1200px) {
 
     .inputBtns{
-      width: 45%;
+      width: 55%;
     }
     .pagination{
       float: none;
@@ -232,14 +233,20 @@
     #nextBtn{
       float: right;
     }
-
+    fieldset {
+      padding-top: 0;
+      
+    }
+    .inputBtns{
+      font-size: 16px;
+    }
   }
   @media screen and (max-width:700px) {
     #regForm{
       width: 97%;
     }
     .inputBtns{
-      width: 55%;
+      width: 65%;
     }
     #headtitle{
       font-size: 18px;
@@ -271,6 +278,26 @@
     .results{
       text-align: left;
       margin-left: 2px;
+    }
+
+  }
+  @media screen and (max-width:400px) {
+    
+    .inputBtns{
+      width: 100%;
+      font-size: 14.5px;
+    }
+    .items input{
+      margin: 0; 
+      font-size: 14px;
+      width: 95%;
+    }
+    #title{
+      font-size: 14px;
+      
+    }
+    .pagination_buttons{
+      font-size: 12.5px;
     }
 
   }
