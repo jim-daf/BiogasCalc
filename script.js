@@ -41,7 +41,7 @@ function showTab(n) {
     document.getElementById("nextBtn").innerHTML = "Υπολογισμός";
     
   }else if(n==(x.length-1)){
-    document.getElementById("nextBtn").innerHTML="Ξεκίνα απ'την αρχή"
+    document.getElementById("nextBtn").innerHTML="Ξεκίνησε πάλι"
   } 
   else {
     document.getElementById("nextBtn").innerHTML = "Επόμενο";
@@ -198,7 +198,7 @@ function clickEventHandler(currentTab){
             }
             
         }
-    }else if(nextBtn.innerHTML=="Ξεκίνα απ'την αρχή" && currentTab==3){
+    }else if(nextBtn.innerHTML=="Ξεκίνησε πάλι" && currentTab==3){
         nextBtn.onclick=(e)=>{
             nextPrev(-3)
             clickEventHandler(currentTab-3)
