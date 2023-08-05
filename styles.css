@@ -124,13 +124,13 @@
   
   #prevBtn {
     background-color: rgb(241, 235, 235);
-    border: 0px solid;
+    border: 0.124rem solid;
     border-radius: 2.5px;
   }
   #nextBtn{
     color: black;
     
-    border: 0px solid;
+    border: 0.124rem solid;
     border-radius: 2.5px;
   }
   #nextBtn:hover{

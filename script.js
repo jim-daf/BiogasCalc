@@ -44,7 +44,7 @@ function showTab(n) {
     document.getElementById("nextBtn").innerHTML="Ξεκίνησε πάλι"
   } 
   else {
-    document.getElementById("nextBtn").innerHTML = "Επόμενο";
+    document.getElementById("nextBtn").innerHTML = "Επόμενο &raquo;";
   }
   //display correct step indicator
   stepHandler(n)
@@ -129,7 +129,8 @@ function clickEventHandler(currentTab){
     
     //Handle next button
         var nextBtn=document.getElementById('nextBtn')
-        if(nextBtn.innerHTML=="Επόμενο"){
+        console.log(nextBtn.innerHTML)
+        if(nextBtn.innerHTML=="Επόμενο »"){
             nextBtn.onclick=(e)=>{
                 
                 var count=0;
