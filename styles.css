@@ -305,6 +305,14 @@
       width: 90%;
       transform: translate(5%);
     }
+    #prevBtn {
+      font-size: 13px;
+      padding: 8px 13px;
+    }
+    #nextBtn{
+      font-size: 13px;
+      padding: 8px 13px;
+    }
 
   }
   @media screen and (max-width:500px) {
@@ -318,14 +326,21 @@
       transform: translate(0%);
     }
     .results{
-      text-align: left;
-      margin-left: 2px;
+      
       font-size: 14px;
+    }
+    #headtitle{
+      font-size: 14px;
+      text-align: left;
+      transform: translate(-25%,25%);
     }
     
   }
   @media screen and (max-width:400px) {
-    
+    #headtitle{
+      transform: translate(-25%,10%);
+    }
+
     .inputBtns{
       width: 100%;
       font-size: 14.5px;
@@ -339,10 +354,19 @@
       font-size: 14px;
       
     }
-    .pagination_buttons{
-      font-size: 12.5px;
+    #nextBtn{
+      font-size: 11.5px;
     }
-
+    #prevBtn{
+      font-size: 11.5px;
+    }
+    .results{
+      font-size: 12px;
+    }
+    #results_tab{
+      width: 120%;
+      transform: translate(-7.5%);
+    }
   }
   
   
