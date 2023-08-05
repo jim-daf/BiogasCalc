@@ -26,9 +26,10 @@
     width: 100%;
   }
   #regForm {
-    
+    border: 2px solid white;
     background-color: #4472c4;
     margin: auto;
+    box-shadow: 8px 8px 15px 5px;
     
     padding-bottom: 10px;
     margin-top: 50px;
@@ -79,8 +80,8 @@
     margin: 0 auto;
     text-align: center;
     width: 35%;
-    border: 1px solid ;
-    
+    border: 1px solid;
+    border-radius: 3.5px;
     
   }
   .inputBtns:hover{
@@ -124,13 +125,13 @@
   #prevBtn {
     background-color: rgb(241, 235, 235);
     border: 1px solid;
-    
+    border-radius: 2.5px;
   }
   #nextBtn{
     color: black;
     
     border: 1px solid;
-    
+    border-radius: 2.5px;
   }
   #nextBtn:hover{
     color: rgb(241, 235, 235);
@@ -208,14 +209,7 @@
     #title{
       font-size: 20px;
     }
-    #results_tab{
-      width: 60%;
-      transform: translate(35%);
-    }
-    .results{
-      text-align: left;
-      margin-left: 5px;
-    }
+    
     .pagination_buttons{
       font-size: 14px;
     }
@@ -240,7 +234,45 @@
     .inputBtns{
       font-size: 16px;
     }
+    #results_tab{
+      width: 70%;
+      transform: translate(25%);
+    }
+    .results{
+      text-align: left;
+      margin-left: 5px;
+      
+    }
+    
   }
+  @media screen and (max-width:950px) {
+
+    
+    #results_tab{
+      width: 85%;
+      transform: translate(12.5%);
+    }
+    .results{
+      text-align: left;
+      margin-left: 5px;
+      
+    }
+    
+  }
+  @media screen and (max-width:800px) {
+
+    
+    #results_tab{
+      width: 95%;
+      transform: translate(2.5%);
+    }
+    .results{
+      font-size: 15px;
+      
+    }
+    
+  }
+
   @media screen and (max-width:700px) {
     #regForm{
       width: 97%;
@@ -256,12 +288,22 @@
       font-size: 18px;
     }
     #results_tab{
-      width: 100%;
-      transform: translate(0%);
+      width: 80%;
+      transform: translate(15%);
     }
     .results{
       text-align: left;
-      margin-left: 2px;
+      margin-left: 5px;
+      font-size: 14px;
+    }
+    
+
+  }
+  @media screen and (max-width:550px) {
+    
+    #results_tab{
+      width: 90%;
+      transform: translate(5%);
     }
 
   }
@@ -278,8 +320,9 @@
     .results{
       text-align: left;
       margin-left: 2px;
+      font-size: 14px;
     }
-
+    
   }
   @media screen and (max-width:400px) {
     
