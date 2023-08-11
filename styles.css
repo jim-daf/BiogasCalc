@@ -376,6 +376,35 @@
     }
     
   }
+  @media screen and (max-width:450px) {
+    #headtitle{
+      transform: translate(-25%,10%);
+    }
+
+    .inputBtns{
+      width: 80%;
+      font-size: 12.5px;
+    }
+    .items input{
+      margin: 0; 
+      font-size: 12px;
+      width: 80%;
+    }
+    #title{
+      font-size: 14px;
+      
+    }
+    
+    .results{
+      
+      font-size: 12px;
+    }
+    .restart-symbol{
+      font-size: 12px;
+    }
+
+    
+  }
   @media screen and (max-width:400px) {
     #headtitle{
       transform: translate(-25%,10%);
