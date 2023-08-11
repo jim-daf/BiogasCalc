@@ -13,8 +13,6 @@ document.getElementsByClassName("step")[currentTab].classList.add('current');
 
 showTab(currentTab); // Display the current tab
 
-
-
 clickEventHandler(currentTab) // Handle click events
 
 
@@ -62,7 +60,7 @@ function showTab(n) {
         document.getElementById("nextBtn").innerHTML = "Calculate <i class='fas fa-calculator'></i>"
         
       }else if(n==(x.length-1)){
-        document.getElementById("nextBtn").innerHTML="Restart &#8634;"
+        document.getElementById("nextBtn").innerHTML= "Restart &#8634;"
       } 
       else {
         document.getElementById("nextBtn").innerHTML = "Next &raquo;";

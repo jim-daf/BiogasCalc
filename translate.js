@@ -22,9 +22,6 @@ var dataReload=document.querySelectorAll("[data-reload]")
             result2:"Avoidance of CO2 emissions:",
             result3:"Construction cost:",
             result4:"Operating costs:",
-            next1:"Next",
-            next2:"Calculate",
-            next3:"Restart",
             previous:"« Previous",
         },
         gr:{
@@ -47,9 +44,6 @@ var dataReload=document.querySelectorAll("[data-reload]")
             result2:"Αποφυγή εκπομπών CO2:",
             result3:"Κόστος κατασκευής:",
             result4:"Κόστος λειτουργίας:",
-            next1:"Επόμενο",
-            next2:"Υπολογισμός",
-            next3:"Ξεκίνα πάλι",
             previous:"« Προηγούμενο"
         }
 }
