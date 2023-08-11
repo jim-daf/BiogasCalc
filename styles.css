@@ -238,6 +238,7 @@
 
     .inputBtns{
       width: 55%;
+      font-size: 16px;
     }
     .pagination{
       float: none;
@@ -248,9 +249,6 @@
     fieldset {
       padding-top: 0;
       
-    }
-    .inputBtns{
-      font-size: 16px;
     }
     #results_tab{
       width: 70%;
@@ -369,11 +367,11 @@
 
     .inputBtns{
       width: 100%;
-      font-size: 14.5px;
+      font-size: 12.5px;
     }
     .items input{
       margin: 0; 
-      font-size: 14px;
+      font-size: 12px;
       width: 95%;
     }
     #title{
