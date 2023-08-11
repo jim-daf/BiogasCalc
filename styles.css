@@ -140,6 +140,7 @@
     
     border: 1px solid;
     border-radius: 2.5px;
+    
   }
   #nextBtn:hover{
     color: rgb(241, 235, 235);
@@ -181,6 +182,14 @@
     width: 290px;
     
   }
+
+  .restart-symbol{
+    font-size: 13.5px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+
+  }
   /*.items label{
     visibility: hidden;
   }*/
@@ -193,6 +202,7 @@
     }
     #title{
       font-size: 20px;
+      
     }
     #results_tab{
       width: 60%;
@@ -383,6 +393,11 @@
       width: 120%;
       transform: translate(-7.5%);
     }
+    .restart-symbol{
+      font-size: 11px;
+    }
+
+    
   }
   
   

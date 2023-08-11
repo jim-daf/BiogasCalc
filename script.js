@@ -44,7 +44,7 @@ function showTab(n) {
         
         
       }else if(n==(x.length-1)){
-        document.getElementById("nextBtn").innerHTML="Ξεκίνησε πάλι &#8634;"
+        document.getElementById("nextBtn").innerHTML="Ξεκίνα πάλι <span class='restart-symbol'>&#x27F3;</span>"
       } 
       else {
         document.getElementById("nextBtn").innerHTML = "Επόμενο &raquo;";
@@ -60,7 +60,7 @@ function showTab(n) {
         document.getElementById("nextBtn").innerHTML = "Calculate <i class='fas fa-calculator'></i>"
         
       }else if(n==(x.length-1)){
-        document.getElementById("nextBtn").innerHTML= "Restart &#8634;"
+        document.getElementById("nextBtn").innerHTML= "Restart <span class='restart-symbol'>&#x27F3;</span>"
       } 
       else {
         document.getElementById("nextBtn").innerHTML = "Next &raquo;";
@@ -229,7 +229,7 @@ function clickEventHandler(currentTab){
             }
             
         }
-    }else if((nextBtn.innerHTML=="Ξεκίνησε πάλι ↺" || nextBtn.innerHTML=="Restart ↺") && currentTab==3){
+    }else if((nextBtn.innerHTML.includes("Ξεκίνα πάλι") || nextBtn.innerHTML.includes("Restart")) && currentTab==3){
         nextBtn.onclick=(e)=>{
             nextPrev(-3)
             clickEventHandler(currentTab-3)
