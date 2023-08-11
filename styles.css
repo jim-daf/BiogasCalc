@@ -79,6 +79,9 @@
     font-size: 17px;
     border: 1px solid #aaaaaa;
   }
+  input:focus {
+    border: #4472c4;
+  }
   .inputBtns{
     margin: 0 auto;
     text-align: center;
