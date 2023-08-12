@@ -1,0 +1,461 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f1f1f1;
+    background: url("../../images/Biogas_Back.jpg") no-repeat center center fixed;
+    background-size: cover;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+  fieldset {
+    padding: 20px 40px;
+    border: none;
+    
+  }
+  .flags{
+    width: 40px;
+  }
+  .line {
+
+    height: 0;
+    width: calc(100% + 84px); /* Adjust based on the padding value */
+    margin-left: -42px; /* Adjust based on the padding value */
+    overflow: visible;
+  }
+  hr{
+    width: 100%;
+  }
+  #regForm {
+    border: 2px solid white;
+    background-color: #4472c4;
+    margin: auto;
+    box-shadow: 8px 8px 15px 5px;
+    
+    padding-bottom: 10px;
+    margin-top: 50px;
+    width: 50%;
+    min-width: 300px;
+    border-radius: 30px;
+  }
+  
+  /* center title and put logo to the right side of form */
+  .title{
+    display: flex;
+    justify-content: space-between;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 10px;
+  }
+  
+  #results_tab{
+    background-color: white;
+    border: 1px solid black;
+    width: 50%;
+    transform: translate(50%);
+    margin-bottom: 20px;
+  }
+  #logo{
+    
+    width: 85px;
+    background-color: #4472c4;
+    
+    align-self: center;
+    
+  }
+  .results{
+    color: black;
+  }
+  #title {
+    text-align: center; 
+    margin-bottom: 20px; 
+    color: rgb(241, 235, 235);
+    
+  }
+  input {
+    padding: 10px;
+    font-size: 15.5px;
+    border: 1px solid #aaaaaa;
+  }
+  input:focus {
+    border: 1px solid #4472c4;
+  }
+  .inputBtns{
+    margin: 0 auto;
+    text-align: center;
+    width: 35%;
+    border: 0px solid;
+    border-radius: 3.5px;
+    color: black;
+    background-color: rgb(241, 235, 235);
+  }
+  .inputBtns:hover{
+    cursor: pointer;
+    /*opacity: 0.8;*/
+    background-color: #1a2c4b;
+    color: rgb(241, 235, 235);
+  }
+  /* on click */
+  .changeColor{
+    background-color: #1a2c4b;
+    color: rgb(241, 235, 235);
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+    text-align: center;
+    
+  }
+  
+  button {
+    border: none;
+    
+    padding: 9px 18px;
+    cursor: pointer;
+    background-color: rgb(241, 235, 235);
+  }
+  .pagination{
+    float: right;
+  }
+  button:hover {
+    background-color: #1a2c4b;
+    color: rgb(241, 235, 235);
+  }
+  
+  #prevBtn {
+    background-color: rgb(241, 235, 235);
+    color: black;
+    border: 1px solid;
+    border-radius: 2.5px;
+    font-size: 14px;
+    
+  }
+  #nextBtn{
+    
+    color: black;
+    font-size: 14px;
+    padding: none;
+    border: 1px solid;
+    border-radius: 2.5px;
+    
+  }
+  #nextBtn:hover{
+    color: rgb(241, 235, 235);
+  }
+  #prevBtn:hover{
+    background-color: #1a2c4b;
+    color:rgb(241, 235, 235);
+  }
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(241, 235, 235);
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    
+  }
+  
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are current and valid: */
+  .step.current {
+    background-color: #1a2c4b;
+  }
+  
+  .items  {
+    width: 100%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+  }
+  .items input{
+    width: 290px;
+    
+  }
+
+  .restart-symbol{
+    font-size: 13.5px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+
+  }
+  /*.items label{
+    visibility: hidden;
+  }*/
+  @media screen and (max-width:1800px) {
+    
+    
+    #headtitle{
+      font-size: 20px;
+      
+    }
+    #title{
+      font-size: 20px;
+      
+    }
+    #results_tab{
+      width: 60%;
+      transform: translate(35%);
+    }
+    .results{
+      text-align: left;
+      margin-left: 5px;
+    }
+  }
+  @media screen and (max-width:1500px) {
+    #regForm{
+      width: 70%;
+    }
+    .inputBtns{
+      width: 35%;
+    }
+    #headtitle{
+      font-size: 20px;
+      
+    }
+    #title{
+      font-size: 20px;
+    }
+    
+    .pagination_buttons{
+      font-size: 14px;
+    }
+    
+    
+  }
+  @media screen and (max-width:1200px) {
+
+    .inputBtns{
+      width: 55%;
+      font-size: 16px;
+    }
+    .pagination{
+      float: none;
+    }
+    #nextBtn{
+      float: right;
+    }
+    fieldset {
+      padding-top: 0;
+      
+    }
+    #results_tab{
+      width: 70%;
+      transform: translate(25%);
+    }
+    .results{
+      text-align: left;
+      margin-left: 5px;
+      
+    }
+    button {
+      
+      
+      padding: 8px 15px;
+      
+    }
+    
+    
+  }
+  @media screen and (max-width:950px) {
+
+    
+    #results_tab{
+      width: 85%;
+      transform: translate(12.5%);
+    }
+    .results{
+      text-align: left;
+      margin-left: 5px;
+      
+    }
+    
+  }
+  @media screen and (max-width:800px) {
+
+    
+    #results_tab{
+      width: 95%;
+      transform: translate(2.5%);
+    }
+    .results{
+      font-size: 15px;
+      
+    }
+    .flags{
+      width: 33px;
+    }
+    
+    
+  }
+
+  @media screen and (max-width:700px) {
+    #regForm{
+      width: 97%;
+    }
+    .inputBtns{
+      width: 65%;
+    }
+    #headtitle{
+      font-size: 18px;
+      
+    }
+    #title{
+      font-size: 18px;
+    }
+    #results_tab{
+      width: 80%;
+      transform: translate(15%);
+    }
+    .results{
+      text-align: left;
+      margin-left: 5px;
+      font-size: 14px;
+    }
+    
+
+  }
+  @media screen and (max-width:550px) {
+    
+    #results_tab{
+      width: 90%;
+      transform: translate(5%);
+    }
+    #prevBtn {
+      font-size: 13px;
+      padding: 8px 13px;
+    }
+    #nextBtn{
+      font-size: 13px;
+      padding: 8px 13px;
+    }
+    #regForm{
+      box-shadow: none;
+    }
+
+  }
+  @media screen and (max-width:500px) {
+    
+    .inputBtns{
+      width: 60%;
+      font-size: 12.5px;
+    }
+    
+    #results_tab{
+      width: 100%;
+      transform: translate(0%);
+    }
+    .results{
+      
+      font-size: 13px;
+    }
+    #headtitle{
+      font-size: 14px;
+      text-align: left;
+      transform: translate(-25%,25%);
+    }
+    #title{
+      font-size: 14px;
+      
+    }
+    #nextBtn{
+      font-size: 11.5px;
+    }
+    #prevBtn{
+      font-size: 11.5px;
+    }
+    .items input{
+      margin: 0; 
+      font-size: 12px;
+      width: 60%;
+    }
+    button {
+      padding: 7px 13px;
+    }
+    
+  }
+  @media screen and (max-width:450px) {
+    #headtitle{
+      transform: translate(-25%,10%);
+    }
+
+    .inputBtns{
+      width: 80%;
+      font-size: 12.5px;
+    }
+    .items input{
+      margin: 0; 
+      font-size: 12px;
+      width: 80%;
+    }
+    #title{
+      font-size: 14px;
+      
+    }
+    
+    .results{
+      
+      font-size: 12px;
+    }
+    .restart-symbol{
+      font-size: 12px;
+    }
+
+    
+  }
+  @media screen and (max-width:400px) {
+    #headtitle{
+      transform: translate(-25%,10%);
+    }
+
+    .inputBtns{
+      width: 100%;
+      font-size: 12.5px;
+    }
+    .items input{
+      margin: 0; 
+      font-size: 12px;
+      width: 95%;
+    }
+    #title{
+      font-size: 14px;
+      
+    }
+    #nextBtn{
+      font-size: 11.5px;
+    }
+    #prevBtn{
+      font-size: 11.5px;
+    }
+    .results{
+      font-size: 12px;
+    }
+    #results_tab{
+      width: 120%;
+      transform: translate(-7.5%);
+    }
+    .restart-symbol{
+      font-size: 11px;
+    }
+    
+
+    
+  }
+  
+  
