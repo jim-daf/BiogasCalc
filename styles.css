@@ -89,7 +89,7 @@
     border: 0px solid;
     border-radius: 3.5px;
     color: black;
-    
+    background-color: rgb(241, 235, 235);
   }
   .inputBtns:hover{
     cursor: pointer;
@@ -120,6 +120,7 @@
     padding: 10px 20px;
     font-size: 17px;
     cursor: pointer;
+    background-color: rgb(241, 235, 235);
   }
   .pagination{
     float: right;
@@ -136,6 +137,7 @@
     border-radius: 2.5px;
   }
   #nextBtn{
+    
     color: black;
     
     border: 1px solid;

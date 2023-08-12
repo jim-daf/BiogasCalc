@@ -163,7 +163,12 @@ function clickEventHandler(currentTab){
                     }
                 }
                 if(count==0 && inputBtns.length!=0){
-                    alert("Επιλέξτε κάποιο απτα απαιτούμενα πεδία")
+                    if(window.location.hash=="#eng"){
+                        alert("Choose one of the required options")
+                    }else if(window.location.hash=="#gr" || !window.location.hash){
+                        alert("Επιλέξτε κάποιο απτα απαιτούμενα πεδία")
+                    }
+                    
                 }else if(inputBtns.length==0 && validateForm()){
                     nextPrev(1)
                     clickEventHandler(currentTab+1)
