@@ -3,15 +3,16 @@
   }
   
   body {
-    background-color: #f1f1f1;
-    background: url("../images/Biogas_Back.jpg") no-repeat center center fixed;
-    background-size: cover;
+    background-color: #1a2c4b;
+    /*background: url("../images/Biogas_Back.jpg") no-repeat center center fixed;
+    background-size: cover;*/
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
   }
 main{
     margin:30px 8px;
+    margin-top: 0px;
     padding:15px;
 }
 
@@ -27,19 +28,13 @@ header{
 
 
 
-#logo{
-    
-    width: 85px;
-    background-color: #4472c4;
-    
-    align-self: center;
-    
-  }
+
   #headtitle{
     
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     padding: 10px;
+    
   }
 .text{
     font-size: 16px;
@@ -55,7 +50,7 @@ header{
   text-align: center;
   align-items: center;
   justify-content: center;
-  border: 1px solid #1a2c4b;
+  border: 2px solid black;
   width: 70%;
   
 }
@@ -97,3 +92,43 @@ img{
     }
 
   }
+
+ .back-to-home {
+    display: inline-block;
+    
+    text-align: center;
+    text-decoration: none;
+    background-color: grey;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    
+    font-size: 13px;
+    
+    
+    transition: all 0.3s ease;
+    
+}
+.back-to-home span{
+  position: relative;
+  top: 5.2px;
+}
+.back-to-home:hover{
+  background: #3a3b3c;
+}
+
+.flags{
+  width: 40px;
+  float: right;
+  margin: 3px;
+  position: relative;
+  line-height: 1;
+  margin-top: 0px;
+}
+.links{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+ 

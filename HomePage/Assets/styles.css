@@ -8,6 +8,9 @@
     background-size: cover;
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    margin-bottom: 0px ;
+    padding: 0;
 
   }
   fieldset {
@@ -15,9 +18,7 @@
     border: none;
     
   }
-  .flags{
-    width: 40px;
-  }
+  
   .line {
 
     height: 0;
@@ -30,7 +31,7 @@
   }
   #regForm {
     border: 2px solid white;
-    background-color: #4472c4;
+    background-color: #406bb6;
     margin: auto;
     box-shadow: 8px 8px 15px 5px;
     
@@ -60,7 +61,7 @@
   #logo{
     
     width: 85px;
-    background-color: #4472c4;
+    background-color: #406bb6;
     
     align-self: center;
     

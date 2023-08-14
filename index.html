@@ -8,19 +8,120 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <link rel="stylesheet" href="HomePage/Assets/styles.css">
+        <link rel="stylesheet" href="HomePage/Assets/navbar.css">
         <title>Βiogas calculator</title>
 
 
     </head>
 
-<body>
-    <a href="#eng" data-reload><img class="flags"  src="icons/united.png" ></a>
-    <a href="#gr" data-reload><img class="flags"  src="icons/greece.png" ></a>
+   
+    <body>
+        <nav id="navbar">
+            <div class="wrapper">
+                <div class="logo">
+                    <img id="logo" src="images/act4energylogowhite.png" alt="" srcset="" style="background-color: #242526;"  >
+                    <!---->
+                </div>
+                <input type="radio" name="slider" id="menu-btn">
+                <input type="radio" name="slider" id="close-btn">
+                <ul class="nav-links">
+                    <label for="close-btn" class="btn close-btn"><i class="fa fa-times"></i></label>
+                    <li>
+                        <a href="#" style="font-size: 14px;"><i class="fa fa-home"aria-hidden="true"></i> <span id="home">Αρχική</span></a></li>
+                    <li>
+                        <a href="#" class="desktop-item"  style="font-size: 14px;">
+                            <i class="fa fa-book"></i> <span id="manual">Εγχειρίδιο Χρήσης</span> <i class="fa fa-angle-down" id="arrow"
+                                aria-hidden="true"></i></a>
+                        <input type="checkbox" id="showDrop">
+                        
+                        <ul class="drop-menu" style="font-size: 14px; ">
+                            
+                            <li><a style="font-size: 14px;" href="/ManualPage/index.html"> <img class="drop-menu-flags"  src="icons/greece.png" > <span id="grmanual">Στα ελληνικά</span> </a></li>
+                            <li><a style="font-size: 14px;" href="#"> <img class="drop-menu-flags"  src="icons/united.png" > <span id="engmanual">Στα αγγλικά</span> </a></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li><a href="https://act4energy.gr/" style="font-size: 14px;"><img style="position: relative; line-height: 1; top: 2px;" src="icons/external-link (1).png" alt=""></i> <span id="visitSite">Επισκεφθείτε την ιστοσελίδα μας</span></a></li>
+                                <li>
+                                    <a href="#" class="desktop-item" style="font-size: 14px;">
+                                        <i class="fas fa-download"></i> <span id="mobile">Mobile έκδοση εφαρμογής</span> <i class="fas fa-angle-down" id="arrow"
+                                            aria-hidden="true"></i></a>
+                                    <input type="checkbox" id="showDrop">
+                                    
+                                    <ul class="drop-menu" style="font-size: 14px; ">
+                                        
+                                        <li><a href="#" style="font-size: 14px;"><i class="fas fa-download" style="color: white;"></i> <span id="android">Για Android</span></a></li>
+                                        <li><a href="#" style="font-size: 14px;"><i class="fas fa-download" style="color: white;"></i> <span id="ios">Για IOS</span></a></li>
+                                        
+                                    </ul>
+                                </li>
+                                <li id="flag-li">
+                                    <div class="flag-links">
+                                        <a id="engflag" class="flag-link" href="#eng"  data-reload><img class="flags"  src="icons/united.png" ></a>
+                                        <a id="grflag" class="flag-link" href="#gr"  data-reload><img class="flags"  src="icons/greece.png" ></a>
+                                    </div>
+                                    
+                                </li>
+                                
+                </ul>
+                <label for="menu-btn" class="btn menu-btn"><i class="fa fa-bars"></i></label>
+            </div>
+        </nav>
+        <!--<nav id="navbar">
+            <div class="wrapper">
+                <div class="logo">
+                    
+                    <a href="#eng" class="logo" data-reload><img class="flags"  src="icons/united.png" ></a>
+                    <a href="#gr" class="logo" data-reload><img class="flags"  src="icons/greece.png" ></a>
+                </div>
+                <input type="radio" name="slider" id="menu-btn">
+                <input type="radio" name="slider" id="close-btn">
+                <ul class="nav-links">
+                    <label for="close-btn" class="btn close-btn"><i class="fa fa-times"></i></label>
+                    <li><a href="/dashboard" style="font-size: 14px;"><i class="fa fa-home"
+                                aria-hidden="true"></i> Αρχική</a></li>
+                    
+                    <li>
+                        <a href="#" class="desktop-item" style="font-size: 14px;">
+                            <i class="fa fa-book"></i> Εγχειρίδιο Χρήσης <i class="fa fa-angle-down" id="arrow"
+                                aria-hidden="true"></i></a>
+                        <input type="checkbox" id="showDrop">
+                        
+                        <ul class="drop-menu" style="font-size: 14px; ">
+                            
+                            <li><a style="font-size: 14px;" href="/ManualPage/index.html"> Στα ελληνικά <i class="fas fa-download" 
+                                aria-hidden="true"></i></a></li>
+                            <li><a style="font-size: 14px;" href="/users/phpCourse"> Στα αγγλικά <i class="fas fa-download" 
+                                aria-hidden="true"></i></a></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li><a href="" style="font-size: 14px;"><img style="position: relative; line-height: 1; top: 2px;" src="icons/external-link (1).png" alt=""></i> Επισκεφθείτε την ιστοσελίδα μας</a></li>
+                                <li>
+                                    <a href="#" class="desktop-item" style="font-size: 14px;">
+                                        <i class="fa fa-book"></i> Mobile έκδοση εφαρμογής <i class="fa fa-angle-down" id="arrow"
+                                            aria-hidden="true"></i></a>
+                                    <input type="checkbox" id="showDrop">
+                                    
+                                    <ul class="drop-menu" style="font-size: 14px; ">
+                                        
+                                        <li><a href="/users/nodeCourse" style="font-size: 14px;"> Για android </a></li>
+                                        <li><a href="/users/phpCourse" style="font-size: 14px;"> Στα ios </a></li>
+                                        
+                                    </ul>
+                                </li>
+                </ul>
+                <label for="menu-btn" class="btn menu-btn"><i class="fa fa-bars"></i></label>
+            </div>
+        </nav> -->
+    
 <form id="regForm" action="">
     
     
         
-    <div class="title" style="background-color: #4472c4; ">
+    <div class="title">
         <div style="width: 70px;"></div>
         <!--<img width="70px" src="act4energylogowhite.png" alt="" srcset="" style="visibility: hidden;" >-->
         <h1 id="headtitle" style="text-align: center; color: rgb(241, 235, 235);">Υπολογισμός CO2 & Βιοαερίου</h1>
