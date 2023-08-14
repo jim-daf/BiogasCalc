@@ -28,11 +28,7 @@ var dataReload=document.querySelectorAll("[data-reload]")
             mobile:"Download for mobile",
             android:"Android",
             ios:"IOS",
-            grmanual:"Greek version",
-            engmanual:"English version",
             manual:"User Manual"
-
-
         },
         gr:{
             headtitle:"Υπολογισμός CO2 & Βιοαερίου",
@@ -60,8 +56,6 @@ var dataReload=document.querySelectorAll("[data-reload]")
             mobile:"Mobile έκδοση εφαρμογής",
             android:"Για Android",
             ios:"Για IOS",
-            grmanual:"Στα Ελληνικά",
-            engmanual:"Στα Αγγλικά",
             manual:"Εγχειρίδιο χρήσης"
         }
 }
@@ -86,14 +80,10 @@ function setLanguage(language) {
             prevBtn.textContent = languages.eng.previous
             home.textContent = languages.eng.home
             manual.textContent = languages.eng.manual
-            grmanual.textContent = languages.eng.grmanual
-            engmanual.textContent = languages.eng.engmanual
             mobile.textContent = languages.eng.mobile
             android.textContent = languages.eng.android
             ios.textContent = languages.eng.ios
             visitSite.textContent = languages.eng.visitSite
-
-
         }
         if (language === 'gr') {
             headtitle.textContent = languages.gr.headtitle;
@@ -113,9 +103,7 @@ function setLanguage(language) {
             hmeresleit.placeholder = languages.gr.input3
             prevBtn.textContent = languages.gr.previous
             home.textContent = languages.gr.home
-            manual.textContent = languages.gr.manual
-            grmanual.textContent = languages.gr.grmanual
-            engmanual.textContent = languages.gr.engmanual
+            manual.textContent = languages.gr.manual  
             mobile.textContent = languages.gr.mobile
             android.textContent = languages.gr.android
             ios.textContent = languages.gr.ios
