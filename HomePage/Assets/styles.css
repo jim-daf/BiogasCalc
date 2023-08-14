@@ -347,7 +347,7 @@
     
     .inputBtns{
       width: 60%;
-      font-size: 12.5px;
+      font-size: 13.5px;
     }
     
     #results_tab{
@@ -364,18 +364,18 @@
       transform: translate(-25%,25%);
     }
     #title{
-      font-size: 14px;
+      font-size: 14.5px;
       
     }
     #nextBtn{
-      font-size: 11.5px;
+      font-size: 12.5px;
     }
     #prevBtn{
-      font-size: 11.5px;
+      font-size: 12.5px;
     }
     .items input{
       margin: 0; 
-      font-size: 12px;
+      font-size: 13px;
       width: 60%;
     }
     button {
@@ -390,24 +390,24 @@
 
     .inputBtns{
       width: 80%;
-      font-size: 12.5px;
+      font-size: 13.5px;
     }
     .items input{
       margin: 0; 
-      font-size: 12px;
+      font-size: 13px;
       width: 80%;
     }
     #title{
-      font-size: 14px;
+      font-size: 14.5px;
       
     }
     
     .results{
       
-      font-size: 12px;
+      font-size: 13px;
     }
     .restart-symbol{
-      font-size: 12px;
+      font-size: 13px;
     }
 
     
@@ -419,7 +419,7 @@
 
     .inputBtns{
       width: 100%;
-      font-size: 12.5px;
+      font-size: 13.5px;
     }
     .items input{
       margin: 0; 
@@ -427,24 +427,24 @@
       width: 95%;
     }
     #title{
-      font-size: 14px;
+      font-size: 14.5px;
       
     }
     #nextBtn{
-      font-size: 11.5px;
+      font-size: 12.5px;
     }
     #prevBtn{
-      font-size: 11.5px;
+      font-size: 12.5px;
     }
     .results{
-      font-size: 12px;
+      font-size: 13px;
     }
     #results_tab{
       width: 120%;
       transform: translate(-7.5%);
     }
     .restart-symbol{
-      font-size: 11px;
+      font-size: 12px;
     }
     
 
