@@ -61,6 +61,9 @@ var dataReload=document.querySelectorAll("[data-reload]")
 }
 
 function setLanguage(language) {
+        const supElement = document.createElement('sup');
+        supElement.textContent='3'
+
         if (language === 'eng') {
             headtitle.textContent = languages.eng.headtitle;
             metapoihsh.value = languages.eng.typeOfService1;
@@ -75,7 +78,11 @@ function setLanguage(language) {
             vooeidi_gal.value = languages.eng.service8
             vooeidi_kreat.value = languages.eng.service9
             numAnimals.placeholder = languages.eng.input1
-            posotites.placeholder = languages.eng.input2
+            posotites.placeholder = languages.eng.input2+posotites.placeholder
+            
+
+            //$('#posotites').attr('placeholder', languages.eng.input2 + ' m'+supElement.outerHTML.html());
+            
             hmeresleit.placeholder = languages.eng.input3
             prevBtn.textContent = languages.eng.previous
             home.textContent = languages.eng.home
@@ -99,7 +106,7 @@ function setLanguage(language) {
             vooeidi_gal.value = languages.gr.service8
             vooeidi_kreat.value = languages.gr.service9
             numAnimals.placeholder = languages.gr.input1
-            posotites.placeholder = languages.gr.input2
+            posotites.placeholder = languages.gr.input2+posotites.placeholder
             hmeresleit.placeholder = languages.gr.input3
             prevBtn.textContent = languages.gr.previous
             home.textContent = languages.gr.home
@@ -124,6 +131,9 @@ function setLanguage(language) {
             location.reload(true);
             setLanguage(language);
         };
+    }
+    if(!window.location.hash){
+        setLanguage('gr')
     }
 
 
