@@ -3,7 +3,7 @@
   }
   
   body {
-    background-color: #1a2c4b;
+    background-color: rgb(82,86,89);
     /*background: url("../images/Biogas_Back.jpg") no-repeat center center fixed;
     background-size: cover;*/
     align-items: center;
@@ -51,7 +51,7 @@ header{
   align-items: center;
   justify-content: center;
   border: 2px solid black;
-  width: 70%;
+  width: 80%;
   
 }
 img{
@@ -130,7 +130,7 @@ img{
 }
 .back-to-home span{
   position: relative;
-  top: 5.2px;
+  top: 6px;
 }
 .back-to-home:hover{
   background: #3a3b3c;

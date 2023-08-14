@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>User Manual</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     
     
 </head>
 <body>
     <div class="links">
-        <a href="../index.html" class="back-to-home"><span>Επιστροφή στην αρχική</span></a>
+        <a href="../index.html" class="back-to-home"><span id="backToHome"><i class="fa fa-arrow-left"></i> Επιστροφή στην αρχική</span></a>
         <div class="flag-links">
             <a href="#eng"  data-reload><img class="flags"  src="../icons/united.png" ></a>
             <a href="#gr"  data-reload><img class="flags"  src="../icons/greece.png" ></a>
@@ -31,9 +33,9 @@
             </div>
     
         <div class="box">
-            <header style="font-size: 16px; text-decoration: underline; margin-bottom: 23px;"> Επιλογή είδους επιχείρησης </header>
+            <header style="font-size: 16px; text-decoration: underline; margin-bottom: 23px;" id="typeOfBusiness"> Επιλογή είδους επιχείρησης </header>
             
-            <p class="text">Στο 1ο βήμα της εφαρμογής ο χρήστης επιλέγει το είδος της επιχείρησης που τον ενδιαφέρει. <br>
+            <p class="text" id="typeOfBusiness-txt">Στο 1ο βήμα της εφαρμογής ο χρήστης επιλέγει το είδος της επιχείρησης που τον ενδιαφέρει. <br>
                 Διατίθενται δύο κεντρικές επιλογές. <br>
                 Η πρώτη αφορά τις <b>μεταποιητικές</b> επιχειρήσεις 
                 και η δεύτερη τις επιχειρήσεις <b>εκτροφής ζώων</b>. </p>
@@ -45,18 +47,18 @@
             
         </div>
         <div class="box">
-            <header style="font-size: 16px; text-decoration: underline; margin-bottom: 23px;"> Επιλογή επιχείρησης </header>
+            <header style="font-size: 16px; text-decoration: underline; margin-bottom: 23px;" id="business"> Επιλογή επιχείρησης </header>
             
-            <p class="text">Μετά την επιλογή του ο χρήστης μεταφέρεται στο δεύτερο βήμα της φόρμας στο οποίο καλείται να επιλέξει την επιχείρηση εκτροφής ζώων που τον ενδιαφέρει(πχ πουλερικά, χοιρινά, βοοειδή, κλπ):
+            <p class="text" id="business-txt">Μετά την επιλογή του ο χρήστης μεταφέρεται στο δεύτερο βήμα της φόρμας στο οποίο καλείται να επιλέξει την επιχείρηση εκτροφής ζώων που τον ενδιαφέρει(πχ πουλερικά, χοιρινά, βοοειδή, κλπ):
                 </p>
             <img src="../images/grmanual3.png"> 
             <br>
-            <p class="text">
+            <p class="text" id="business-txt2">
                 Αν ο χρήστης αλλάξει γνώμη και θελήσει να γυρίσει πίσω και να επιλέξει διαφορετικό είδος επιχείρησης, αυτό μπορεί να το πετύχει κάνοντας κλικ στο κουμπί "Προηγούμενο".
                 Σε αυτήν την περίπτωση θα έχει να επιλέξει μεταξύ διαφορετικών ειδών μεταποιητικών επιχειρήσεων (πχ παραγωγή ελαιολάδου, τυροκόμιση γάλακτος, κλπ): 
                 </p>  
                 <img src="../images/grmanual4.png"> <br>
-            <p class="text">
+            <p class="text" id="business-txt3">
                 Εστω ότι ο χρήστης επιλέξει την επιχείρηση εκτροφής Αιγοπροβάτων: </p>
                 <img src="../images/grmanual5.png"> <!--max width and height for responsive resize and center it to its parent element-->
             
@@ -64,9 +66,9 @@
             
         </div>
         <div class="box">
-            <header style="font-size: 16px; text-decoration: underline; margin-bottom: 23px;"> Εισαγωγή δεδομένων απ'τον χρήστη </header>
+            <header style="font-size: 16px; text-decoration: underline; margin-bottom: 23px;" id="userInput"> Εισαγωγή δεδομένων απ'τον χρήστη </header>
             
-            <p class="text">Μετά την
+            <p class="text" id="userInput-txt">Μετά την
                 επιλογή του ο χρήστης μεταφέρεται στο τρίτο βήμα της φόρμας στο οποίο καλείται να
                 συμπληρώσει τα παρακάτω δεδομένα: <br>(α) Αριθμός εκτρεφόμενων ζώων <br>(β) Παραγόμενες
                 ποσότητες αποβλήτων <br>(γ) Ημέρες λειτουργίας της επιχείρησης. </p>
@@ -78,7 +80,7 @@
         <div class="box">
             <header style="font-size: 16px; text-decoration: underline; margin-bottom: 23px;"> Αποτελέσματα </header>
             
-            <p class="text">Αφού ο χρήστης πατήσει το κουμπί του υπολογισμού για τα δεδομένα που έδωσε τότε μεταφέρεται στο 4ο βήμα της φόρμας στο οποίο μπορεί να δει τα αποτελέσματα βάση των επιλογών που έκανε. 
+            <p class="text" id="userInput-txt2">Αφού ο χρήστης πατήσει το κουμπί του υπολογισμού για τα δεδομένα που έδωσε τότε μεταφέρεται στο 4ο βήμα της φόρμας στο οποίο μπορεί να δει τα αποτελέσματα βάση των επιλογών που έκανε. 
                 Αν ο χρήστης επιθυμεί να ξαναρχίσει από την αρχή την συμπλήρωση της φόρμας τότε μπορεί να πατήσει το κουμπί "Ξεκίνα πάλι"
                 </p>
             <img src="../images/grmanual8.png"> 
@@ -89,8 +91,8 @@
         <div class="box">
             <a href="" id="tribute-link" target="_blank"></a>
         
-            <header style="font-size: 16px; text-decoration: underline; margin-bottom: 10px;">Υπολογισμοί των αποτελεσμάτων</header>
-        <p class="text">Υπολογισμός δυναμικού παραγωγής βιοαερίου
+            <header style="font-size: 16px; text-decoration: underline; margin-bottom: 10px;" id="">Υπολογισμοί των αποτελεσμάτων</header>
+        <p class="text" id="">Υπολογισμός δυναμικού παραγωγής βιοαερίου
 
             Το δυναμικό παραγωγής βιοαερίου για τα εξεταζόμενα απόβλητα υπολογίζεται από την
             παρακάτω εξίσωση: <br>
