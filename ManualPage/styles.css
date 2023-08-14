@@ -65,6 +65,25 @@ img{
     
 
 }
+
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  display: none;
+}
+
+.scroll-to-top-btn:hover {
+  background-color: #2980b9;
+}
 @media screen and (max-width: 1470px) {
     #tribute-info {
       font-size: 16px;
@@ -131,4 +150,4 @@ img{
   justify-content: space-between;
 }
 
- 
+
