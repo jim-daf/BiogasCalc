@@ -44,11 +44,12 @@
   
   /* center title and put logo to the right side of form */
   .title{
-    display: flex;
-    justify-content: space-between;
+    /*display: flex;
+    justify-content: space-between;*/
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     padding: 10px;
+    align-items: center;
   }
   
   #results_tab{
@@ -359,12 +360,12 @@
       font-size: 13px;
     }
     #headtitle{
-      font-size: 14px;
-      text-align: left;
-      transform: translate(-25%,25%);
+      font-size: 16px;
+      /*text-align: left;
+      transform: translate(-25%,25%);*/
     }
     #title{
-      font-size: 14.5px;
+      font-size: 15.5px;
       
     }
     #nextBtn{
@@ -384,9 +385,9 @@
     
   }
   @media screen and (max-width:450px) {
-    #headtitle{
+    /*#headtitle{
       transform: translate(-25%,10%);
-    }
+    }*/
 
     .inputBtns{
       width: 80%;
@@ -413,9 +414,9 @@
     
   }
   @media screen and (max-width:400px) {
-    #headtitle{
+    /*#headtitle{
       transform: translate(-25%,10%);
-    }
+    }*/
 
     .inputBtns{
       width: 100%;
