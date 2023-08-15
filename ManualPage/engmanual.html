@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>User Manual</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    
+</head>
+<body>
+    <div class="links">
+        <a href="../index.html" class="back-to-home"><span id="backToHome"><i class="fa fa-arrow-left"></i> Back to home</span></a>
+        <div class="flag-links">
+            <a href="engmanual.html"  data-reload><img class="flags"  src="../icons/united.png" ></a>
+            <a href="grmanual.html"  data-reload><img class="flags"  src="../icons/greece.png" ></a>
+        </div>
+        
+    </div>
+    
+    <main id="main">
+
+            <div class="box">
+                <div id="headtitle">
+                    <header id="title">User Manual</header>
+                    
+                </div>
+                
+                
+            </div>
+    
+        <div class="box">
+            <header style="font-size: 16px; text-decoration: underline; margin-bottom: 23px;" id="typeOfBusiness"> Select type of business </header>
+            
+            <p class="text" id="typeOfBusiness-txt">In the 1st step of the form, the user selects the type of business he is interested in. <br>
+                Two options are available. <br>
+                The first concerns <b>processing</b> businesses
+                and the second concerns <b>animal breeding</b> businesses. </p>
+            <img src="../images/engmanual1.png"> <br>
+            <p class="text">Suppose that the user selects the business type "Animal breeding": </p>
+                <img src="../images/engmanual2.png"> <!--max width and height for responsive resize and center it to its parent element-->
+            
+            
+            
+        </div>
+        <div class="box">
+            <header style="font-size: 16px; text-decoration: underline; margin-bottom: 23px;" id="business"> Select business </header>
+            
+            <p class="text" id="business-txt">After making his selection, the user is transferred to the second step of the form, 
+                in which he is asked to select the animal breeding business he is interested in (e.g. poultry, pigs, cattle, etc.):
+                </p>
+            <img src="../images/engmanual3.png"> 
+            <br>
+            <p class="text" id="business-txt2">
+                If the user changes his/her mind and wants to go back and select a different type of businesses, he/she can do so by clicking the "Previous" button.
+                In this case, the user will have to choose between different types of processing businesses (eg olive oil production, milk cheese making, etc.): 
+                </p>  
+                <img src="../images/engmanual4.png"> <br>
+            <p class="text" id="business-txt3">
+                Suppose the user chooses the Sheep and Goat breeding business: </p>
+                <img src="../images/engmanual5.png"> <!--max width and height for responsive resize and center it to its parent element-->
+            
+            
+            
+        </div>
+        <div class="box">
+            <header style="font-size: 16px; text-decoration: underline; margin-bottom: 23px;" id="userInput"> Input data from the user </header>
+            
+            <p class="text" id="userInput-txt">After his or her
+                selection, the user is transferred to the third step of the form in which he/she is asked to
+                fill in the following data: <br>(a) Number of animals <br>(b) Produced
+                quantities of waste <br>(c) Business operating days. </p>
+            <img src="../images/engmanual6.png"> 
+            <p class="text">Let's say that the user inputs that he has 66 Goats and Sheep from which 55 m<sup>3</sup> of waste are produced daily and this business operated for 42 days:  </p>
+            
+                <img src="../images/engmanual7.png"> <!--max width and height for responsive resize and center it to its parent element-->
+                <br><br>
+                <p class="text"><i>The number entered by the user that refers to the number of animals, must be ≥ 0</i><br>
+                    <i>The number entered by the user that refers to the product's
+                        waste quantities must be ≥ 0</i><br>
+                    <i>The number entered by the user that refers to the operating days of the business, must be ≥ 0 and ≤ 365 </i></p>
+        </div>
+        <div class="box">
+            <header style="font-size: 16px; text-decoration: underline; margin-bottom: 23px;"> Results </header>
+            
+            <p class="text" id="userInput-txt2">After the user presses the calculation button for the data he provided, he is transferred to the 4th step of the form where he can see the results based on the choices he made.
+                If the user wishes to start over from the beginning filling out the form then he can press the button "Restart"
+                </p>
+            <img src="../images/engmanual8.png"> 
+                
+            
+                
+        </div>
+        <div class="box">
+            <a href="" id="tribute-link" target="_blank"></a>
+        
+            <header style="font-size: 16px; text-decoration: underline; margin-bottom: 10px;" id="">Calculations</header>
+            <br>
+        <p class="text" id="">
+            <b>Calculation of biogas production potential:</b> <br><br>
+            <!-- Table section -->
+    
+            The biogas production potential for the considered waste is calculated from the
+             equation below: <br><br>
+             <b>QBG-d = QW-d * Y(BG/W) </b><br><br>
+             Where: <br><br>
+             QBG-d -> the daily biogas production (m<sup>3</sup> biogas/day) (calculated by the application) <br>
+             QW-d -> the daily amount of waste (m<sup>3</sup> waste/day) (to be filled in by the user) <br>
+             Y(BG/W) -> the biogas recovery factor of the considered waste (m<sup>3</sup> biogas / m<sup>3</sup> waste) (chosen by the application) <br>
+             <br>
+             For the case of the biogas recovery factor (Y(BG/W)) the application
+             takes into account the following data:
+        </p>
+            <br>
+            
+            
+            <div class="table-container">
+                
+                <table class="head_section">
+                    <thead>
+                        <tr>
+                            <th colspan="2" style="color: white;">Type of business -> "Breeding animals"</th>
+                        </tr>
+                        
+                    </thead>
+                    
+                    <thead>
+                        <tr class="col" style="color: white;">
+                            
+                            <th scope="col">Business</th>
+                            <th scope="col">Biogas recovery factor</th>
+                            
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>Sheep and Goats</td>
+                            <td>150 m<sup>3</sup>/tn waste</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Poultry</td>
+                            <td>200 m<sup>3</sup>/tn waste</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Pork</td>
+                            <td>6 m<sup>3</sup>/m<sup>3</sup> waste</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Dairy Cattle</td>
+                            <td>20 m<sup>3</sup>/m<sup>3</sup> waste</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Beef Cattle</td>
+                            <td>50 m<sup>3</sup>/tn waste</td>
+                            
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                
+            </div><br>
+            <div class="table-container">
+            
+            <table class="head_section">
+                <thead>
+                    <tr>
+                        <th colspan="2" style="color: white;">Type of business -> "Processing"</th>
+                    </tr>
+                    
+                </thead>
+                <thead>
+                    <tr class="col" style="color: white;">
+                        
+                        <th scope="col">Business</th>
+                        <th scope="col">Biogas recovery factor</th>
+                        
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>Olive oil production</td>
+                        <td>70 m<sup>3</sup>/tn waste</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Milk cheese making</td>
+                        <td>30 m<sup>3</sup>/m<sup>3</sup> waste</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Flour mill products</td>
+                        <td>800 m<sup>3</sup>/tn waste</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Meat Processing</td>
+                        <td>80 m<sup>3</sup>/tn waste</td>
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <br>
+        
+        <p class="text" id="">
+            <b>CO2 emission reduction calculation:</b><br><br>
+         The annual reduction of CO2 emissions from the utilization of the produced biogas as
+         substitute for conventional fossil fuels can be calculated from the equation: <br><br>
+         <b>GHG(kgCO2/year) = 1.87 * Q BG-year * CH4 * T</b><br><br>
+         Where<br><br>
+         GHG = annual amounts of CO2 avoided (kg/year) (calculated by the application) <br>
+         QBG-d = the annual amount of biogas produced (m<sup>3</sup>/year) (calculated by the application) <br>
+         CH4 = the percentage of methane in the biogas (%) (chosen by the application) <br>
+         T = the annual number of operating days of the installation (to be filled in by the user) <br><br>
+        
+         The percentage of biogas to methane for the examined wastes is shown in the
+         below tables:</p> <br><br>
+        <div class="table-container">
+                
+            <table class="head_section">
+                <thead>
+                    <tr>
+                        <th colspan="2" style="color: white;">Type of business -> "Animal breeding"</th>
+                    </tr>
+                    
+                </thead>
+                
+                <thead>
+                    <tr class="col" style="color: white;">
+                        
+                        <th scope="col">Business</th>
+                        <th scope="col">Percentage of methane in biogas (%)</th>
+                        
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>Sheep and Goats</td>
+                        <td>55%</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Poultry</td>
+                        <td>60%</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Pork</td>
+                        <td>55%</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Dairy Cattle</td>
+                        <td>60%</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Beef Cattle</td>
+                        <td>55%</td>
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+        </div><br>
+        <div class="table-container">
+        
+        <table class="head_section">
+            <thead>
+                <tr>
+                    <th colspan="2" style="color: white;">Type of business -> "Processing"</th>
+                </tr>
+                
+            </thead>
+            <thead>
+                <tr class="col" style="color: white;">
+                    
+                    <th scope="col">Business</th>
+                    <th scope="col">Percentage of methane in biogas (%)</th>
+                    
+                    
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>Olive Oil Production</td>
+                    <td>65%</td>
+                    
+                </tr>
+                <tr>
+                    <td>Milk Cheese making</td>
+                    <td>50%</td>
+                    
+                </tr>
+                <tr>
+                    <td>Flour Mill Products</td>
+                    <td>60%</td>
+                    
+                </tr>
+                <tr>
+                    <td>Meat Processing</td>
+                    <td>70%</td>
+                    
+                </tr>
+                
+            </tbody>
+        </table>
+    </div> 
+    <br><br>
+    <p class="text" id="">
+        <b> Calculation of construction cost:</b><br><br>
+         The construction cost of the biogas production facility is calculated from the
+         equation: <br><br>
+         <b>CAPEX = a * VDG</b> <br><br>
+         <i>VDG = QBG-d / 1.35</i><br>
+         <i>a= -40*ln(VDG ) + 1000</i>
+         <br><br>
+         Where: <br><br>
+         CAPEX -> manufacturing cost (€) <br>
+         VDG -> the volume of the anaerobic digestion tank (m<sup>3</sup> ) (calculated by the application) <br>
+         QBG-d -> the daily biogas production (m<sup>3</sup>/day) (calculated by the application) <br>
+         a -> the coefficient of unit construction cost of the installation (€/m<sup>3</sup> ) (the
+         calculated by the application) <br>
+    </p>
+    <br>
+    <p class="text" id="">
+        <b>Calculation of electricity consumption costs:</b><br><br>
+         The annual cost of electricity consumption by the facility under consideration is
+calculated from the equation: <br><br>
+         <b>OPEX electr (€/year) = 20*(kW)*(T)*(C)</b> <br><br>
+         <i>kW = [-0.008*ln(V DG ) + 0.082]*V DG</i><br>
+         <i>VDG = QBG-d / 1.35</i>
+         <br><br>
+         Where: <br><br>
+         OPEX electr -> the annual cost of electricity consumption (€/year) <br>
+         kW -> the installed power of the mechanical equipment (kW) <br>
+         C -> the cost of electricity (= 0.15 € / kWh-el) (it is chosen by the application or
+the user) <br>
+T -> the number of days of operation of the facility (to be filled in by the user) <br>
+VDG -> the volume of the anaerobic digestion tank (m<sup>3</sup>) (calculated by the application) <br>
+QBG-d -> the daily biogas production (m<sup>3</sup>/day) (calculated by the application) <br>
+    </p>
+    <br>
+    <p class="text" id="">
+        <b>Calculation of mechanical equipment maintenance costs:</b><br><br>
+         The annual maintenance cost of the installed mechanical equipment (OPEX
+mech, €) can be calculated from the equation: <br><br>
+         <b>OPEX mech (€/year) = -0.0046*(VDG ) 2 + 27.5*VDG - 34.8</b> <br><br>
+         <i>VDG = QBG-d / 1.35</i>
+        
+         <br><br>
+         Where: <br><br>
+         OPEX mech -> the annual maintenance cost of mechanical equipment (€/year) <br>
+         VDG -> the volume of the anaerobic digestion tank (m<sup>3</sup> ) (calculated by the application) <br>
+         QBG-d -> the daily biogas production (m<sup>3</sup>/day) (calculated by the application) <br>
+         <br>
+    </p>
+    <br>
+    <p class="text" id="">
+        <b>Calculation of the cost of checking if the operation is good:</b><br><br>
+         The annual cost of checking the good operation of the installation can be calculated from
+the equation: <br><br>
+         <b>OPEX monitor (€/year) = 1800*ln(VDG) – 5300</b> <br><br>
+         <i>VDG = QBG-d / 1.35</i><br>
+         <br><br>
+         Where: <br><br>
+         OPEX monitor -> the annual cost of checking the good operation of the installation (€/year) <br>
+         VDG -> the volume of the anaerobic digestion tank (m<sup>3</sup> ) (calculated by the application) <br>
+         QBG-d -> the daily biogas production (m<sup>3</sup>/day) (calculated by the application) <br>
+
+    </p>
+    <br>
+    <p class="text" id="">
+        <b>Calculation of Staff annual costs:</b><br><br>
+         The annual cost of Staff fees for the operation of the facility is calculated
+from the equation: <br><br>
+         <b>OPEX labor (€/year) = 10 000 ln(V DG ) – 50 000</b> <br><br>
+         <i>VDG = QBG-d / 1.35</i>
+         <br><br>
+         Where: <br><br>
+         OPEX labor -> annual cost of Staff fees (€/year) <br>
+         VDG -> the volume of the anaerobic digestion tank (m<sup>3</sup> ) (calculated by the application) <br><br>
+        <i> If VDG &lt; 300 m<sup>3</sup> then OPEX labor = 0 </i><br>
+
+    </p>
+<br><br>
+    <p class="text" id="">
+        <b>Operating cost calculation:</b><br><br>
+         The total annual operating cost of the business is calculated from the equation: <br><br>
+         <b>OPEX total (€/year) = OPEX electr + OPEX mech + OPEX monitor + OPEX labor</b> <br><br>
+        
+         <br><br>
+         Where: <br><br>
+         OPEX electr -> the annual cost of electricity consumption (€/year) <br>
+         OPEX mech -> the annual maintenance cost of mechanical equipment (€/year) <br>
+         OPEX monitor -> the annual cost of checking the good operation of the installation (€/year) <br>
+         OPEX labor -> annual cost of Staff fees (€/year) <br>
+
+    </p>
+
+
+        </div>
+        
+        
+    </main>
+    <!-- Up Arrow button -->
+  <button id="scrollToTopBtn" class="scroll-to-top-btn">↑</button>
+
+  
+</body>
+
+<script src="script.js"></script>
+<script src="translate.js"></script>
+</html>

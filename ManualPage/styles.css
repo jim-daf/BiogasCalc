@@ -150,4 +150,40 @@ img{
   justify-content: space-between;
 }
 
+/* Table */
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 0;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  table-layout: fixed;
+}
+
+td,
+th {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 1rem 15px;
+  font-size: 15px;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: normal;
+  background-color: #242526;
+}
+
+td {
+  background-color: #dddddd;
+  border: 2px solid #ccc;
+  color: #000;
+}
+
+
+.table-container {
+  overflow-x: auto; /* Enable horizontal scrolling if table overflows */
+  max-width: 100%; /* Ensure the container doesn't exceed its parent's width */
+}
