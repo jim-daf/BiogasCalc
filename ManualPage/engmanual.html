@@ -38,45 +38,42 @@
                     <div class="table-container">
             
                     <table class="head_section">
-                        <thead>
-                            <tr>
-                                <th colspan="2" style="color: white;">Table of Contents</th>
-                            </tr>
-                            
-                        </thead>
+                        
                         
                         <tbody>
                             
                             <tr>
-                                <td colspan="2"><a class="text" href="#typeOfBusiness">Select type of business</a></td>
+                                <td style="text-align: left;" colspan="2"><a class="text" href="#typeOfBusiness">1. Select type of business</a></td>
                                 
                                 
                             </tr>
                             <tr>
-                                <td colspan="2"><a class="text" href="#business">Select business</a></td>
+                                <td style="text-align: left;" colspan="2"><a class="text" href="#business">2. Select business</a></td>
                                 
                                 
                             </tr>
                             <tr>
-                                <td colspan="2"><a class="text" href="#userInput">Input data from the user</a></td>
+                                <td  style="text-align: left;"colspan="2"><a class="text" href="#userInput">3. Input data from the user</a></td>
                                 
                                 
                             </tr>
                             <tr>
-                                <td colspan="2"><a class="text" href="#results">Results</a></td>
+                                <td style="text-align: left;" colspan="2"><a class="text" href="#results">4. Results</a></td>
                                 
                                 
                             </tr>
                             <tr>
-                                <td colspan="2"><a class="text" href="#calculations">Calculation of results</a></td>
-                                
+                                <td style="text-align: left;" colspan="2"><a class="text" href="#calculations">5. Calculation of results</a></td>
+                                <td style="text-align: left;" colspan="2"><a class="text" href="#calculations">5.1 Calculation of results</a></td>
+                                <td style="text-align: left;" colspan="2"><a class="text" href="#calculations">5.2 Calculation of results</a></td>
+                                <td style="text-align: left;" colspan="2"><a class="text" href="#calculations">5.3 Calculation of results</a></td>
                                 
                             </tr>
                             
                         </tbody>
                     </table>
                 </div>
-                -->
+            -->
                 
                     <ul style="text-align: left;">
                       <li><a class="text" href="#typeOfBusiness">1. Select type of business</a></li>
@@ -84,6 +81,17 @@
                       <li><a class="text" href="#userInput">3. Input data from the user</a></li>
                       <li><a class="text" href="#results">4. Results</a></li>
                       <li><a class="text" href="#calculations">5. Calculation of results</a></li>
+                      <li><a class="text" href="#biogasCalc">5.1 Calculation of biogas production potential</a></li>
+                      <li><a class="text" href="#wasteCalculation">5.2 CO2 emission reduction calculation</a></li>
+                      <li><a class="text" href="#constructionCostCalc">5.3 Calculation of construction cost</a></li>
+                      <li><a class="text" href="#electrCostCalc">5.4 Calculation of electricity <br>consumption costs</a></li>
+                      <li><a class="text" href="#mechCostCalc">5.5 Calculation of mechanical equipment <br>maintenance costs</a></li>
+                      <li><a class="text" href="#goodCheckCalc">5.6 Calculation of the cost of checking <br>if the operation is good</a></li>
+                      <li><a class="text" href="#staffFeesCalc">5.7 Calculation of Staff annual costs</a></li>
+                      <li><a class="text" href="#totalOperatingCostCalc">5.8 Operating cost calculation</a></li>
+                        
+                    
+                    
                     </ul>
                 
                 
@@ -156,8 +164,8 @@
         
             <header style="font-size: 16px; text-decoration: underline; margin-bottom: 10px;" id="calculations">Calculations of results</header>
             <br>
-        <p class="text" id="">
-            <b>Calculation of biogas production potential:</b> <br><br>
+        <p class="text" id="biogasCalculation">
+            <b>5.1 Calculation of biogas production potential:</b> <br><br>
             <!-- Table section -->
     
             The biogas production potential for the considered waste is calculated from the
@@ -272,8 +280,8 @@
         <br>
         <br>
         
-        <p class="text" id="">
-            <b>CO2 emission reduction calculation:</b><br><br>
+        <p class="text" id="wasteCalculation">
+            <b>5.2 CO2 emission reduction calculation:</b><br><br>
          The annual reduction of CO2 emissions from the utilization of the produced biogas as
          substitute for conventional fossil fuels can be calculated from the equation: <br><br>
          <b>GHG(kgCO2/year) = 1.87 * Q BG-year * CH4 * T</b><br><br>
@@ -381,8 +389,8 @@
         </table>
     </div> 
     <br><br>
-    <p class="text" id="">
-        <b> Calculation of construction cost:</b><br><br>
+    <p class="text" id="constructionCostCalc">
+        <b>5.3 Calculation of construction cost:</b><br><br>
          The construction cost of the biogas production facility is calculated from the
          equation: <br><br>
          <b>CAPEX = a * VDG</b> <br><br>
@@ -397,8 +405,8 @@
          calculated by the application) <br>
     </p>
     <br>
-    <p class="text" id="">
-        <b>Calculation of electricity consumption costs:</b><br><br>
+    <p class="text" id="electrCostCalc">
+        <b>5.4 Calculation of electricity consumption costs:</b><br><br>
          The annual cost of electricity consumption by the facility under consideration is
 calculated from the equation: <br><br>
          <b>OPEX electr (€/year) = 20*(kW)*(T)*(C)</b> <br><br>
@@ -415,8 +423,8 @@ VDG -> the volume of the anaerobic digestion tank (m<sup>3</sup>) (calculated by
 QBG-d -> the daily biogas production (m<sup>3</sup>/day) (calculated by the application) <br>
     </p>
     <br>
-    <p class="text" id="">
-        <b>Calculation of mechanical equipment maintenance costs:</b><br><br>
+    <p class="text" id="mechCostCalc">
+        <b>5.5 Calculation of mechanical equipment maintenance costs:</b><br><br>
          The annual maintenance cost of the installed mechanical equipment (OPEX
 mech, €) can be calculated from the equation: <br><br>
          <b>OPEX mech (€/year) = -0.0046*(VDG ) 2 + 27.5*VDG - 34.8</b> <br><br>
@@ -430,8 +438,8 @@ mech, €) can be calculated from the equation: <br><br>
          <br>
     </p>
     <br>
-    <p class="text" id="">
-        <b>Calculation of the cost of checking if the operation is good:</b><br><br>
+    <p class="text" id="goodCheckCalc">
+        <b>5.6 Calculation of the cost of checking if the operation is good:</b><br><br>
          The annual cost of checking the good operation of the installation can be calculated from
 the equation: <br><br>
          <b>OPEX monitor (€/year) = 1800*ln(VDG) – 5300</b> <br><br>
@@ -444,8 +452,8 @@ the equation: <br><br>
 
     </p>
     <br>
-    <p class="text" id="">
-        <b>Calculation of Staff annual costs:</b><br><br>
+    <p class="text" id="staffFeesCalc">
+        <b>5.7 Calculation of Staff annual costs:</b><br><br>
          The annual cost of Staff fees for the operation of the facility is calculated
 from the equation: <br><br>
          <b>OPEX labor (€/year) = 10 000 ln(V DG ) – 50 000</b> <br><br>
@@ -458,12 +466,12 @@ from the equation: <br><br>
 
     </p>
 <br><br>
-    <p class="text" id="">
-        <b>Operating cost calculation:</b><br><br>
+    <p class="text" id="totalOperatingCostCalc">
+        <b>5.8 Operating cost calculation:</b><br><br>
          The total annual operating cost of the business is calculated from the equation: <br><br>
          <b>OPEX total (€/year) = OPEX electr + OPEX mech + OPEX monitor + OPEX labor</b> <br><br>
         
-         <br><br>
+         
          Where: <br><br>
          OPEX electr -> the annual cost of electricity consumption (€/year) <br>
          OPEX mech -> the annual maintenance cost of mechanical equipment (€/year) <br>

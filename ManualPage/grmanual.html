@@ -41,13 +41,21 @@
                   <li><a class="text" href="#userInput">3. Εισαγωγή δεδομένων από τον χρήστη </a></li>
                   <li><a class="text" href="#results">4. Αποτελέσματα</a></li>
                   <li><a class="text" href="#calculations">5. Υπολογισμοί των αποτελεσμάτων</a></li>
+                  <li><a class="text" href="#biogasCalc">5.1 Υπολογισμός δυναμικού παραγωγής βιοαερίου</a></li>
+                      <li><a class="text" href="#wasteCalculation">5.2 Υπολογισμός μείωσης εκπομπών CO2</a></li>
+                      <li><a class="text" href="#constructionCostCalc">5.3 Υπολογισμός κόστους κατασκευής</a></li>
+                      <li><a class="text" href="#electrCostCalc">5.4 Υπολογισμός κόστους κατανάλωσης <br>ηλεκτρικής ενέργειας</a></li>
+                      <li><a class="text" href="#mechCostCalc">5.5 Υπολογισμός κόστους συντήρησης <br>μηχανολογικού εξοπλισμού</a></li>
+                      <li><a class="text" href="#goodCheckCalc">5.6 Υπολογισμός ετήσιου κόστους ελέγχου <br>καλής λειτουργίας</a></li>
+                      <li><a class="text" href="#staffFeesCalc">5.7 Υπολογισμός ετήσιου κόστους προσωπικού</a></li>
+                      <li><a class="text" href="#totalOperatingCostCalc">5.8 Υπολογισμός κόστους λειτουργίας</a></li>
                 </ul>
                
                 
                 
             </div>
         <div class="box">
-            <header style="font-size: 16px; text-decoration: underline; margin-bottom: 23px;" id="typeOfBusiness"> Επιλογή είδους επιχείρησης </header>
+            <header style="font-size: 16px; text-decoration: underline; margin-bottom: 23px;" id="typeOfBusiness">1. Επιλογή είδους επιχείρησης </header>
             
             <p class="text" id="typeOfBusiness-txt">Στο 1ο βήμα της φόρμας ο χρήστης επιλέγει το είδος της επιχείρησης που τον ενδιαφέρει. <br>
                 Διατίθενται δύο κεντρικές επιλογές. <br>
@@ -61,7 +69,7 @@
             
         </div>
         <div class="box">
-            <header style="font-size: 16px; text-decoration: underline; margin-bottom: 23px;" id="business"> Επιλογή επιχείρησης </header>
+            <header style="font-size: 16px; text-decoration: underline; margin-bottom: 23px;" id="business">2. Επιλογή επιχείρησης </header>
             
             <p class="text" id="business-txt">Μετά την επιλογή του ο χρήστης μεταφέρεται στο δεύτερο βήμα της φόρμας στο οποίο καλείται να επιλέξει την επιχείρηση εκτροφής ζώων που τον ενδιαφέρει(πχ πουλερικά, χοιρινά, βοοειδή, κλπ):
                 </p>
@@ -80,7 +88,7 @@
             
         </div>
         <div class="box">
-            <header style="font-size: 16px; text-decoration: underline; margin-bottom: 23px;" id="userInput"> Εισαγωγή δεδομένων από τον χρήστη </header>
+            <header style="font-size: 16px; text-decoration: underline; margin-bottom: 23px;" id="userInput">3. Εισαγωγή δεδομένων από τον χρήστη </header>
             
             <p class="text" id="userInput-txt">Μετά την
                 επιλογή του ο χρήστης μεταφέρεται στο τρίτο βήμα της φόρμας στο οποίο καλείται να
@@ -97,7 +105,7 @@
                 <i>Ο αριθμός που εισαγάγει ο χρήστης και αφορά τις ημέρες λειτουργίας της επιχείρησης πρέπει να είναι &gt;0 και &lt;365 </i></p>
         </div>
         <div class="box">
-            <header style="font-size: 16px; text-decoration: underline; margin-bottom: 23px;" id="results"> Αποτελέσματα </header>
+            <header style="font-size: 16px; text-decoration: underline; margin-bottom: 23px;" id="results">4. Αποτελέσματα </header>
             
             <p class="text" id="userInput-txt2">Αφού ο χρήστης πατήσει το κουμπί του υπολογισμού για τα δεδομένα που έδωσε τότε μεταφέρεται στο 4ο βήμα της φόρμας στο οποίο μπορεί να δει τα αποτελέσματα βάση των επιλογών που έκανε. 
                 Αν ο χρήστης επιθυμεί να ξαναρχίσει από την αρχή την συμπλήρωση της φόρμας τότε μπορεί να πατήσει το κουμπί "Ξεκίνα πάλι"
@@ -110,10 +118,10 @@
         <div class="box">
             <a href="" id="tribute-link" target="_blank"></a>
         
-            <header style="font-size: 16px; text-decoration: underline; margin-bottom: 10px;" id="calculations">Υπολογισμοί των αποτελεσμάτων</header>
+            <header style="font-size: 16px; text-decoration: underline; margin-bottom: 10px;" id="calculations">5. Υπολογισμοί των αποτελεσμάτων</header>
             <br>
-        <p class="text" id="">
-            <b>Υπολογισμός δυναμικού παραγωγής βιοαερίου:</b> <br><br>
+        <p class="text" id="biogasCalculation">
+            <b>5.1 Υπολογισμός δυναμικού παραγωγής βιοαερίου:</b> <br><br>
             <!-- Table section -->
     
             Το δυναμικό παραγωγής βιοαερίου για τα εξεταζόμενα απόβλητα υπολογίζεται από την
@@ -228,8 +236,8 @@
         <br>
         <br>
         
-        <p class="text" id="">
-            <b>Υπολογισμός μείωσης εκπομπών CO2:</b><br><br>
+        <p class="text" id="wasteCalculation">
+            <b>5.2 Υπολογισμός μείωσης εκπομπών CO2:</b><br><br>
         Η ετήσια μείωση των εκπομπών CO2 από την αξιοποίηση του παραγόμενου βιοαερίου ως
         υποκατάστατο συμβατικών ορυκτών καυσίμων μπορεί να υπολογιστεί από την εξίσωση: <br><br>
         <b>GHG(kgCO2/year) = 1.87 * Q BG-year * CH4 * T</b><br><br>
@@ -337,8 +345,8 @@
         </table>
     </div> 
     <br><br>
-    <p class="text" id="">
-        <b>Υπολογισμός κόστους κατασκευής:</b><br><br>
+    <p class="text" id="constructionCostCalc">
+        <b>5.3 Υπολογισμός κόστους κατασκευής:</b><br><br>
         Το κόστος κατασκευής της εγκατάστασης παραγωγής βιοαερίου υπολογίζεται από την
         εξίσωση: <br><br>
         <b>CAPEX = a * VDG</b> <br><br>
@@ -353,8 +361,8 @@
         υπολογίζει η εφαρμογή) <br>
     </p>
     <br>
-    <p class="text" id="">
-        <b>Υπολογισμός κόστους κατανάλωσης ηλεκτρικής ενέργειας:</b><br><br>
+    <p class="text" id="electrCostCalc">
+        <b>5.4 Υπολογισμός κόστους κατανάλωσης ηλεκτρικής ενέργειας:</b><br><br>
         Το ετήσιο κόστος κατανάλωσης ηλεκτρικής ενέργειας από την εξεταζόμενη εγκατάσταση
 υπολογίζεται από την εξίσωση: <br><br>
         <b>OPEX electr (€/year) = 20*(kW)*(T)*(C)</b> <br><br>
@@ -371,8 +379,8 @@ VDG -> ο όγκος της δεξαμενής αναερόβιας χώνευσ
 QBG-d -> η ημερήσια παραγωγή βιοαερίου (m<sup>3</sup>/day) (την υπολογίζει η εφαρμογή)  <br>
     </p>
     <br>
-    <p class="text" id="">
-        <b>Υπολογισμός κόστους συντήρησης μηχανολογικού εξοπλισμού:</b><br><br>
+    <p class="text" id="mechCostCalc">
+        <b>5.5 Υπολογισμός κόστους συντήρησης μηχανολογικού εξοπλισμού:</b><br><br>
         Το ετήσιο κόστος συντήρησης του εγκατεστημένου μηχανολογικού εξοπλισμού (OPEX
 mech, €) μπορεί να υπολογιστεί από την εξίσωση: <br><br>
         <b>OPEX mech (€/year) = -0,0046*(VDG ) 2 + 27,5*VDG - 34,8</b> <br><br>
@@ -386,8 +394,8 @@ mech, €) μπορεί να υπολογιστεί από την εξίσωση
         <br>
     </p>
     <br>
-    <p class="text" id="">
-        <b>Υπολογισμός ετήσιου κόστους ελέγχου καλής λειτουργίας:</b><br><br>
+    <p class="text" id="goodCheckCalc">
+        <b>5.6 Υπολογισμός ετήσιου κόστους ελέγχου καλής λειτουργίας:</b><br><br>
         Το ετήσιο κόστος ελέγχου καλής λειτουργίας της εγκατάστασης μπορεί υπολογίζεται από
 την εξίσωση: <br><br>
         <b>OPEX monitor (€/year) = 1800*ln(VDG) – 5300</b> <br><br>
@@ -400,8 +408,8 @@ mech, €) μπορεί να υπολογιστεί από την εξίσωση
 
     </p>
     <br>
-    <p class="text" id="">
-        <b>Υπολογισμός ετήσιου κόστους προσωπικού:</b><br><br>
+    <p class="text" id="staffFeesCalc">
+        <b>5.7 Υπολογισμός ετήσιου κόστους προσωπικού:</b><br><br>
         Το ετήσιο κόστος αμοιβών προσωπικού για τη λειτουργία της εγκατάστασης υπολογίζεται
 από την εξίσωση: <br><br>
         <b>OPEX labor (€/year) = 10 000 ln(V DG ) – 50 000</b> <br><br>
@@ -414,12 +422,11 @@ mech, €) μπορεί να υπολογιστεί από την εξίσωση
 
     </p>
 <br><br>
-    <p class="text" id="">
-        <b>Υπολογισμός κόστους λειτουργίας:</b><br><br>
+    <p class="text" id="totalOperatingCostCalc">
+        <b>5.8 Υπολογισμός κόστους λειτουργίας:</b><br><br>
         Το συνολικό ετήσιο κόστος λειτουργίας της επιχείρησης υπολογίζεται από την εξίσωση: <br><br>
         <b>OPEX total (€/year) = OPEX electr + OPEX mech + OPEX monitor + OPEX labor</b> <br><br>
         
-        <br><br>
         Όπου: <br><br>
         OPEX electr -> το ετήσιο κόστος κατανάλωσης ηλεκτρικής ενέργειας (€/year) <br>
         OPEX mech -> το ετήσιο κόστος συντήρησης μηχανολογικού εξοπλισμού (€/year) <br>

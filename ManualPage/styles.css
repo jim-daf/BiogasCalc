@@ -46,6 +46,9 @@ header{
   list-style: none;
   margin-bottom: 20px;
 }
+ul li a:visited {
+  color: #1B43EF; /* Same color as regular links */
+}
 .box{
   background-color: #eee;
   border-radius: 15px;
