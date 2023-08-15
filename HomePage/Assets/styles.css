@@ -19,7 +19,7 @@
     
   }
   #headtitle{
-    font-size: 20px;
+    font-size: 22px;
   }
   .line {
 
@@ -76,7 +76,7 @@
     text-align: center; 
     margin-bottom: 20px; 
     color: rgb(241, 235, 235);
-    
+    font-size: 22px;
   }
   input {
     padding: 10px;
