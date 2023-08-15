@@ -42,6 +42,10 @@ header{
 
     
 }
+.box ul li{
+  list-style: none;
+  margin-bottom: 20px;
+}
 .box{
   background-color: #eee;
   border-radius: 15px;
