@@ -46,10 +46,10 @@ header{
   list-style: none;
   margin-bottom: 19px;
 }
-ul li{
+.links{
   color: #2145e5; 
 }
-ul li a:visited {
+li a:visited {
   color: #2145e5; /* Same color as regular links */
 }
 #calcCategories{
