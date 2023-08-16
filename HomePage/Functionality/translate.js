@@ -28,7 +28,10 @@ var dataReload=document.querySelectorAll("[data-reload]")
             mobile:"Download for mobile",
             android:"Android",
             ios:"IOS",
-            manual:"User Manual"
+            manual:"User Manual",
+            fewWordsAboutAppTxt:"The application of ACT4ENERGY aims to provide the user with data concerning (a) the biogas production potential, (b) its gas emission avoidance potential greenhouse, (c) the cost of construction and (d) the cost of operating a facility anaerobic digestion, for waste treatment. It is aimed at businesses animal breeding and in processing companies.",
+            fewWordsAboutApp:"A few words about the application",
+            socialMedia:"Find us in Social Media"
         },
         gr:{
             headtitle:"Υπολογισμός CO2 & Βιοαερίου",
@@ -56,7 +59,11 @@ var dataReload=document.querySelectorAll("[data-reload]")
             mobile:"Mobile έκδοση εφαρμογής",
             android:"Για Android",
             ios:"Για IOS",
-            manual:"Εγχειρίδιο χρήσης"
+            manual:"Εγχειρίδιο χρήσης",
+            fewWordsAboutAppTxt:"Η εφαρμογή της ACT4ENERGY έχει στόχο την παροχή στον χρήστη δεδομένων που αφορούν (α) το δυναμικό παραγωγής βιοαερίου, (β) το δυναμικό αποφυγής εκπομπών αερίων του θερμοκηπίου, (γ) το κόστος κατασκευής και (δ) το κόστος λειτουργίας μιας εγκατάστασης αναερόβιας χώνευσης, για την επεξεργασία αποβλήτων. Απευθύνεται σε επιχειρήσεις εκτροφής ζώων και σε μεταποιητικές επιχειρήσεις.",
+            fewWordsAboutApp: "Λιγα λογια για την εφαρμογη",
+            socialMedia:"Βρείτε μας στα Social Media"
+
         }
 }
 
@@ -91,6 +98,10 @@ function setLanguage(language) {
             android.textContent = languages.eng.android
             ios.textContent = languages.eng.ios
             visitSite.textContent = languages.eng.visitSite
+            fewWordsAboutAppTxt.textContent = languages.eng.fewWordsAboutAppTxt
+            fewWordsAboutApp.textContent = languages.eng.fewWordsAboutApp
+            socialMedia.textContent = languages.eng.socialMedia
+            
         }
         if (language === 'gr') {
             headtitle.textContent = languages.gr.headtitle;
@@ -115,6 +126,9 @@ function setLanguage(language) {
             android.textContent = languages.gr.android
             ios.textContent = languages.gr.ios
             visitSite.textContent = languages.gr.visitSite
+            fewWordsAboutAppTxt.textContent = languages.gr.fewWordsAboutAppTxt
+            fewWordsAboutApp.textContent = languages.gr.fewWordsAboutApp
+            socialMedia.textContent = languages.gr.socialMedia
         }
     }
 
