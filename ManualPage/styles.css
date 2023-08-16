@@ -52,6 +52,18 @@ ul li{
 ul li a:visited {
   color: #2145e5; /* Same color as regular links */
 }
+#calcCategories{
+  visibility: hidden;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+#upArrow{
+  display: none;
+}
+#upArrow:hover,#downArrow:hover{
+  cursor: pointer;
+}
 .box{
   background-color: #eee;
   border-radius: 15px;
