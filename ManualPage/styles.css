@@ -42,21 +42,44 @@ header{
 
     
 }
+.box ul, .box ul ul{
+  max-width: 100%;
+  
+}
 .box ul li{
   list-style: none;
-  margin-bottom: 19px;
+  margin-bottom: 15px;
+  background-color: rgb(31, 26, 26);
+  border-radius: 15px;
+  padding: 9px 18px;
+  overflow: hidden;
+  max-width: 100%;
+  transform: translateX(-15px);
+  
+ 
 }
-.links{
-  color: #2145e5; 
+
+.box ul li a{
+  color: white;
+  text-decoration: none;
+}
+.box ul ul li a{
+  font-size: 13px;
+}
+.box ul ul li{
+  margin-bottom: 10px;
+  width: 330px;
+  
 }
 li a:visited {
-  color: #2145e5; /* Same color as regular links */
+  color: white /* Same color as regular links */
 }
 #calcCategories{
   visibility: hidden;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease;
+  
 }
 #upArrow{
   display: none;
@@ -68,7 +91,9 @@ li a:visited {
   background-color: #eee;
   border-radius: 15px;
   margin:30px auto;
+  
   padding:15px;
+  
   text-align: center;
   align-items: center;
   justify-content: center;
