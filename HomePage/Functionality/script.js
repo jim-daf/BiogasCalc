@@ -210,6 +210,9 @@ function clickEventHandler(currentTab){
                     }
                     
                 }
+                /*nextBtn.style.backgroundColor="rgb(241, 235, 235)";
+                nextBtn.style.color="black";
+                nextBtn.style.transition="all 0.3s ease";*/
             
         }
     }else if((nextBtn.innerHTML.includes("Υπολογισμός") || nextBtn.innerHTML.includes("Calculate")) && currentTab==2){
@@ -247,15 +250,32 @@ function clickEventHandler(currentTab){
             }
         }
     }
-        
+    
         
     //Handle previous button
     prevBtn.onclick=()=>{
         nextPrev(-1)
         clickEventHandler(currentTab-1)
         document.getElementsByClassName("step")[currentTab].classList.remove("current");
+
+        
         
     }
+    
+    nextBtn.ontouchend = () => {
+        nextBtn.style.backgroundColor = "rgb(241, 235, 235)";
+        nextBtn.style.color = "black";
+        nextBtn.style.transition = "all 0.3s ease"
+
+    };
+    prevBtn.ontouchend = () => {
+        prevBtn.style.backgroundColor = "rgb(241, 235, 235)";
+        prevBtn.style.color = "black";
+        prevBtn.style.transition = "all 0.3s ease"
+    };
+    
+
+    
 
     
 }
@@ -390,6 +410,10 @@ function changeTitle(currentTab){
     }
     
 }
+
+
+
+
 
 
 
