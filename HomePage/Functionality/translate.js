@@ -31,7 +31,9 @@ var dataReload=document.querySelectorAll("[data-reload]")
             manual:"User Manual",
             fewWordsAboutAppTxt:"The application of ACT4ENERGY aims to provide the user with data concerning (a) the biogas production potential, (b) its gas emission avoidance potential greenhouse, (c) the cost of construction and (d) the cost of operating a facility anaerobic digestion, for waste treatment. It is aimed at businesses animal breeding and in processing companies.",
             fewWordsAboutApp:"A few words about the application",
-            socialMedia:"Find us in Social Media"
+            socialMedia:"Find us in Social Media",
+            grmanual:"Greek Version",
+            engmanual:"English Version"
         },
         gr:{
             headtitle:"Υπολογισμός CO2 & Βιοαερίου",
@@ -62,7 +64,9 @@ var dataReload=document.querySelectorAll("[data-reload]")
             manual:"Εγχειρίδιο χρήσης",
             fewWordsAboutAppTxt:"Η εφαρμογή της ACT4ENERGY έχει στόχο την παροχή στον χρήστη δεδομένων που αφορούν (α) το δυναμικό παραγωγής βιοαερίου, (β) το δυναμικό αποφυγής εκπομπών αερίων του θερμοκηπίου, (γ) το κόστος κατασκευής και (δ) το κόστος λειτουργίας μιας εγκατάστασης αναερόβιας χώνευσης, για την επεξεργασία αποβλήτων. Απευθύνεται σε επιχειρήσεις εκτροφής ζώων και σε μεταποιητικές επιχειρήσεις.",
             fewWordsAboutApp: "Λιγα λογια για την εφαρμογη",
-            socialMedia:"Βρείτε μας στα Social Media"
+            socialMedia:"Βρείτε μας στα Social Media",
+            grmanual:"Στα Ελληνικά",
+            engmanual:"Στα Αγγλικά"
 
         }
 }
@@ -86,10 +90,6 @@ function setLanguage(language) {
             vooeidi_kreat.value = languages.eng.service9
             numAnimals.placeholder = languages.eng.input1
             posotites.placeholder = languages.eng.input2+posotites.placeholder
-            
-
-            //$('#posotites').attr('placeholder', languages.eng.input2 + ' m'+supElement.outerHTML.html());
-            
             hmeresleit.placeholder = languages.eng.input3
             prevBtn.textContent = languages.eng.previous
             home.textContent = languages.eng.home
@@ -101,6 +101,8 @@ function setLanguage(language) {
             fewWordsAboutAppTxt.textContent = languages.eng.fewWordsAboutAppTxt
             fewWordsAboutApp.textContent = languages.eng.fewWordsAboutApp
             socialMedia.textContent = languages.eng.socialMedia
+            grmanual.textContent = languages.eng.grmanual
+            engmanual.textContent = languages.eng.engmanual
             
         }
         if (language === 'gr') {
@@ -129,6 +131,8 @@ function setLanguage(language) {
             fewWordsAboutAppTxt.textContent = languages.gr.fewWordsAboutAppTxt
             fewWordsAboutApp.textContent = languages.gr.fewWordsAboutApp
             socialMedia.textContent = languages.gr.socialMedia
+            grmanual.textContent = languages.gr.grmanual
+            engmanual.textContent = languages.gr.engmanual
         }
     }
 
