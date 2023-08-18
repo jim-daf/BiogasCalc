@@ -308,14 +308,150 @@ footer {
       
       
   }
+  @media screen and (max-width: 450px) {
+    
+    
+    
+    
+    .box{
+        padding: 0;
+    }
+    
+      .box .content {
+        font-size: 9.2px;
+        padding: 0;
+      }
+    .box h2{
+        
+        display: block;
+    }
+    .main-content .box{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        
+    }
+    .social a span {
+        
+        display: block;
+        margin-left: 5px;
+      }
+      .social{
+        display: inline-flex;
+        
+      }
+      .social a{
+        text-decoration: none;
+      }
+    #socialMedia{
+        display: block;
+    }
+    
+    .bottom{
+        display: block;
+    }
+    
+      .main-content .content{
+        margin: 0;
+        padding: 0;
+      }
+      
+      
+      
+      .main-content .box {
+        margin: 0px 0;
+      }
+      .main-content .bottom center{
+        font-size: 12px;
+        
+      }
+      .box .content:before {
+        position: absolute;
+        content: "";
+        top: -10px;
+        height: 2px;
+        width: 100%;
+        background: #1a1a1a;
+      }
+      .box .content:after {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 15%;
+        background: #ffffff;
+        top: -10px;
+      }
+      
+      
+  }
   /* responsive footer */
-  @media screen and (max-width: 370px) {
+  @media screen and (max-width: 400px) {
     footer {
       position: sticky;
       top: 100%;
-      margin-top:5%;
+      margin-top:10%;
       padding: 0;
       
+    }
+    .box h2{
+        
+      display: none;
+  }
+  .main-content .box{
+      padding-top: 0px;
+      padding-bottom: 0px;
+      
+  }
+  .social a span {
+      
+      display: block;
+      margin-left: 5px ;
+      
+    }
+    .social{
+      display: inline-flex;
+      
+    }
+    .social a{
+      text-decoration: none;
+    }
+  #socialMedia{
+      display: none;
+  }
+  
+  .bottom{
+      display: block;
+  }
+  
+    .main-content .content{
+      margin: 0;
+      padding: 0;
+    }
+    
+    
+    
+    .main-content .box {
+      margin: 0px 0;
+    }
+    .main-content .bottom center{
+      font-size: 10px;
+      
+    }
+    .box .content:before {
+      
+      top: 0px;
+      height: 0px;
+      width: 0%;
+      background: #1a1a1a;
+    }
+    .box .content:after {
+      
+      height: 0px;
+      width: 0%;
+      background: #ffffff;
+      top: 0px;
+    }
+    .left .content{
+      text-align: left;
     }
     
       
