@@ -48,9 +48,7 @@ header{
 }
 .box ul li{
   list-style: none;
-  margin-bottom: 15px;
-  background-color: rgb(31, 26, 26);
-  border-radius: 15px;
+  margin-bottom: 2.5px;
   padding: 9px 18px;
   overflow: hidden;
   max-width: 100%;
@@ -60,14 +58,17 @@ header{
 }
 
 .box ul li a{
-  color: white;
-  text-decoration: none;
+  color: black;
+  text-decoration: underline;
+  
 }
 .box ul ul li a{
   font-size: 13px;
+  font-style: italic;
 }
 .box ul ul li{
-  margin-bottom: 10px;
+  margin-bottom: 7.5px;
+  padding: 0;
   width: 330px;
   
 }
@@ -79,6 +80,7 @@ li a:visited {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease;
+
   
 }
 #upArrow{
