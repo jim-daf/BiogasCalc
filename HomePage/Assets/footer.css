@@ -384,7 +384,7 @@ footer {
       
   }
   /* responsive footer */
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 400px) and (max-height:768px) {
     footer {
       position: sticky;
       top: 100%;
