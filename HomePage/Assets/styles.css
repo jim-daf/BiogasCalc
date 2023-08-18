@@ -227,10 +227,10 @@
   }
   @media screen and (max-width:1500px) {
     #regForm{
-      width: 70%;
+      width: 60%;
     }
     .inputBtns{
-      width: 35%;
+      width: 40%;
     }
     #headtitle{
       font-size: 20px;
@@ -247,7 +247,7 @@
     
   }
   @media screen and (max-width:1200px) {
-
+    
     .inputBtns{
       width: 55%;
       font-size: 16px;
@@ -274,6 +274,9 @@
   }
   @media screen and (max-width:950px) {
 
+    #regForm{
+      width: 75%;
+    }
     
     #results_tab{
       width: 85%;
