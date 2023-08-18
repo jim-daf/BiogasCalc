@@ -60,11 +60,13 @@ header{
 .box ul li a{
   color: black;
   text-decoration: underline;
+  font-weight: 510;
   
 }
 .box ul ul li a{
   font-size: 13px;
   font-style: italic;
+  font-weight: 400;
 }
 .box ul ul li{
   margin-bottom: 7.5px;
