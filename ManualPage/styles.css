@@ -26,9 +26,6 @@ header{
     font-size: 20px;
 }
 
-
-
-
   #headtitle{
     
     border-top-left-radius: 30px;
@@ -48,7 +45,7 @@ header{
 }
 .box ul li{
   list-style: none;
-  margin-bottom: 2.5px;
+  margin-bottom: 1px;
   padding: 9px 18px;
   overflow: hidden;
   max-width: 100%;
@@ -56,17 +53,31 @@ header{
   
  
 }
-
+.box ul{
+  background-color: #8B4513;
+  border-radius:5px;
+  
+  box-shadow: 0px 0px 0px 2.1px;
+  
+}
+.box ul ul{
+  border: none;
+  box-shadow: none;
+}
+#downArrow, #upArrow{
+  color: #dbd0d0;
+}
 .box ul li a{
-  color: black;
+  color: #dbd0d0;
   text-decoration: underline;
-  font-weight: 510;
+  font-weight: 500;
   
 }
 .box ul ul li a{
   font-size: 13px;
   font-style: italic;
   font-weight: 400;
+  text-decoration: underline;
 }
 .box ul ul li{
   margin-bottom: 7.5px;
