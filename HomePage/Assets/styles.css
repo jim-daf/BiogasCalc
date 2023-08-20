@@ -40,7 +40,7 @@
     
     padding-bottom: 10px;
     margin-top: 50px;
-    width: 40%;
+    width: 45%;
     min-width: 300px;
     border-radius: 30px;
   }
@@ -58,8 +58,8 @@
   #results_tab{
     background-color: white;
     border: 1px solid black;
-    width: 50%;
-    transform: translate(50%);
+    width: 55%;
+    transform: translate(40%);
     margin-bottom: 20px;
   }
   #logo{
@@ -74,6 +74,7 @@
     color: black;
     text-align: left;
     margin-left:5px;
+    font-size: 16px;
   }
   
   #title {
@@ -222,12 +223,13 @@
       
     }
     #results_tab{
-      width: 50%;
+      width: 60%;
       transform: translate(35%);
     }
     .results{
       text-align: left;
       margin-left: 5px;
+      
     }
   }
   @media screen and (max-width:1500px) {
