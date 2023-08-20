@@ -71,12 +71,12 @@ header{
   color: #dbd0d0;
 }
 #contents-title{
-  font-size: 16px;   margin-bottom: 10x; margin-top: 10px;  color: #dbd0d0;
+  font-size: 18px;   margin-bottom: 10x; margin-top: 10px;  color: #dbd0d0;
 }
 .box ul li a{
   color: #dbd0d0;
   text-decoration: underline;
-  font-weight: 500;
+  font-size: 18px;
   
 }
 .box ul ul li a{
@@ -154,14 +154,7 @@ img{
 
   }
 @media screen and (max-width: 880px) {
-  #calcCategories{
-    visibility: hidden;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3s ease;
   
-    
-  }
     #tribute-info {
       font-size: 16px;
       width: 100%;
@@ -176,6 +169,17 @@ img{
         margin:0;
         padding: 0;
     }
+    
+    
+    .box ul li a{
+      
+      font-size: 16px;
+    }
+    
+
+  }
+
+  @media screen and (max-width: 460px) {
     #contents-container{
       background: none;
       box-shadow: none;
@@ -183,19 +187,31 @@ img{
       padding: 0;
       margin: 0;
     }
+    #contents-title{
+      color: #000;
+      text-decoration: underline;
+    }
+    #calcCategories{
+      visibility: hidden;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    
+      
+    }
+    .box ul li a{
+      color: #000;
+      font-size: 15px;
+    }
+    .box ul ul li a{
+      font-size: 12px;
+    }
     #downArrow{
       display: block;
     }
     #downArrow, #upArrow{
       color: #000;
       
-    }
-    .box ul li a{
-      color: #000;
-    }
-    #contents-title{
-      color: #000;
-      text-decoration: underline;
     }
 
   }
