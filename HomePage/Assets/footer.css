@@ -230,7 +230,7 @@ footer {
     footer {
       position: sticky;
       top: 100%;
-      margin-top:0;
+      margin-top:10%;
       padding: 0;
       
     }
@@ -310,7 +310,9 @@ footer {
   }
   @media screen and (max-width: 450px) {
     
-    
+    footer{
+      margin-top: 5%;
+    }
     
     
     .box{
