@@ -15,12 +15,15 @@ main{
     margin-top: 0px;
     padding:15px;
 }
+#upArrow, #downArrow{
+  display: none;
+}
 
 header{
     text-align: center;
-    font-size: 20px;
+    
     font-weight: bold;
-    margin-bottom:10px ;
+    
 }
 #title{
     font-size: 20px;
@@ -67,6 +70,9 @@ header{
 #downArrow, #upArrow{
   color: #dbd0d0;
 }
+#contents-title{
+  font-size: 16px;   margin-bottom: 10x; margin-top: 10px;  color: #dbd0d0;
+}
 .box ul li a{
   color: #dbd0d0;
   text-decoration: underline;
@@ -88,17 +94,8 @@ header{
 li a:visited {
   color: white /* Same color as regular links */
 }
-#calcCategories{
-  visibility: hidden;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3s ease;
 
-  
-}
-#upArrow{
-  display: none;
-}
+
 #upArrow:hover,#downArrow:hover{
   cursor: pointer;
 }
@@ -157,6 +154,14 @@ img{
 
   }
 @media screen and (max-width: 880px) {
+  #calcCategories{
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  
+    
+  }
     #tribute-info {
       font-size: 16px;
       width: 100%;
@@ -170,6 +175,27 @@ img{
     main{
         margin:0;
         padding: 0;
+    }
+    #contents-container{
+      background: none;
+      box-shadow: none;
+      max-width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    #downArrow{
+      display: block;
+    }
+    #downArrow, #upArrow{
+      color: #000;
+      
+    }
+    .box ul li a{
+      color: #000;
+    }
+    #contents-title{
+      color: #000;
+      text-decoration: underline;
     }
 
   }
