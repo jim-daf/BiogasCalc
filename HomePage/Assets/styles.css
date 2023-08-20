@@ -40,7 +40,7 @@
     
     padding-bottom: 10px;
     margin-top: 50px;
-    width: 50%;
+    width: 40%;
     min-width: 300px;
     border-radius: 30px;
   }
@@ -222,7 +222,7 @@
       
     }
     #results_tab{
-      width: 60%;
+      width: 50%;
       transform: translate(35%);
     }
     .results{
