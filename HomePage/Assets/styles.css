@@ -47,8 +47,8 @@
   
   /* center title and put logo to the right side of form */
   .title{
-    /*display: flex;
-    justify-content: space-between;*/
+    display: flex;
+    justify-content: space-between;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     padding: 10px;
@@ -65,10 +65,28 @@
   #logo{
     
     width: 85px;
-    background-color: #406bb6;
+    background-color: transparent;
+    
     
     align-self: center;
     
+  }
+  #biogasLogo{
+    width: 125px;
+    background-color: transparent;
+    background-size: cover;
+    
+    
+    
+    
+    filter: hue-rotate(180deg) invert(1) brightness(1.5);
+    
+    
+    border-radius: 5px;
+
+   
+    
+    align-self: center;
   }
   .results{
     color: black;
@@ -99,6 +117,7 @@
     border-radius: 3.5px;
     color: black;
     background-color: rgb(241, 235, 235);
+    
   }
   .inputBtns:hover{
     cursor: pointer;
@@ -278,6 +297,12 @@
       margin-left: 5px;
       
     }
+    #biogasLogo{
+      width: 100px;
+    }
+    #headtitle{
+      transform: translateX(-15px);
+    }
   }
   @media screen and (max-width:950px) {
 
@@ -310,7 +335,22 @@
     .flags{
       width: 33px;
     }
+    #headtitle{
+      
+      transform: translateX(-2px);
+      
+    }
+    #emptyDiv{
+      display: none;
+    }
     
+    #biogasLogo{
+      display: none;
+    }
+    .title{
+      display: block;
+      justify-content: center;
+    }
     
   }
 
@@ -340,6 +380,18 @@
     
 
   }
+  @media screen and (max-width:600px) {
+    #headtitle{
+      font-size: 16px;
+      
+    }
+    #title{
+      font-size: 16px;
+    }
+    .inputBtns{
+      max-width:220px ;
+    }
+  }
   @media screen and (max-width:550px) {
     
     #results_tab{
@@ -357,6 +409,7 @@
     #regForm{
       box-shadow: none;
     }
+    
 
   }
   @media screen and (max-width:500px) {
@@ -374,11 +427,7 @@
       
       font-size: 13px;
     }
-    #headtitle{
-      font-size: 16px;
-      /*text-align: left;
-      transform: translate(-25%,25%);*/
-    }
+    
     #title{
       font-size: 15.5px;
       
@@ -397,11 +446,15 @@
     button {
       padding: 8px 15px;
     }
+    #headtitle{
+      font-size: 15.5px;
+      
+    }
     
   }
   @media screen and (max-width:450px) {
     /*#headtitle{
-      transform: translate(-25%,10%);
+      transform: translate(50px);
     }*/
 
     .inputBtns{
@@ -417,7 +470,10 @@
       font-size: 14.5px;
       
     }
-    
+    #headtitle{
+      font-size: 14.5px;
+      
+    }
     .results{
       
       font-size: 13px;
@@ -430,7 +486,7 @@
   }
   @media screen and (max-width:400px) {
     /*#headtitle{
-      transform: translate(-25%,10%);
+      transform: translate(35px);
     }*/
 
     .inputBtns{
@@ -442,10 +498,7 @@
       font-size: 12px;
       width: 95%;
     }
-    #title{
-      font-size: 14.5px;
-      
-    }
+    
     #nextBtn{
       font-size: 12.5px;
     }
