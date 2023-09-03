@@ -380,31 +380,31 @@ function changeTitle(currentTab){
     if(window.location.hash=="#gr" || !window.location.hash){
         switch(currentTab){
             case 0: 
-                title.innerHTML='Επιλέξτε είδος επιχείρησης' 
+                title.innerHTML='<div style="text-decoration:underline;">Επιλέξτε είδος επιχείρησης</div>' 
                 break;
             case 1: 
-                title.innerHTML='Επιλέξτε επιχείρηση'
+                title.innerHTML='<div style="text-decoration:underline;">Επιλέξτε επιχείρηση</div>'
                 break;
             case 2: 
-                title.innerHTML='Δώστε τα απαραίτητα δεδομένα <div style="font-weight:normal; font-size:10px;">(Ποσότητες αποβλήτων <span style="text-decoration:underline; font-style:italic;">ημερισίως</span> και ημέρες λειτουργίας <span style="text-decoration:underline; font-style:italic;">ετησίως</span>)</div>'
+                title.innerHTML='<div style="text-decoration:underline;">Δώστε τα απαραίτητα δεδομένα </div><div  style="font-weight:normal; font-size:10px; text-decoration:none;">(Ποσότητες αποβλήτων <span style="text-decoration:none; font-style:italic;">ημερισίως</span> και ημέρες λειτουργίας <span style="text-decoration:none; font-style:italic;">ετησίως</span>)</div>'
                 break;
             case 3: 
-                title.innerHTML='Αποτελέσματα'
+                title.innerHTML='<div style="text-decoration:underline;">Αποτελέσματα</div>'
                 break;
         }
     }else if(window.location.hash=="#eng" && window.location.hash){
         switch(currentTab){
             case 0: 
-                title.innerHTML='Select type of service' 
+                title.innerHTML='<div style="text-decoration:underline;">Select type of service</div>' 
                 break;
             case 1: 
-                title.innerHTML='Select service'
+                title.innerHTML='<div style="text-decoration:underline;">Select service</div>'
                 break;
             case 2: 
-                title.innerHTML='Provide the necessary data <div style="font-weight:normal; font-size:10px;">(Amounts of waste <span style="text-decoration:underline; font-style:italic;">per day</span> and operating days <span style="text-decoration:underline; font-style:italic;">per year</span>)</div>'
+                title.innerHTML='<div style="text-decoration:underline;">Provide the necessary data <div style="font-weight:normal; font-size:10px; text-decoration:none;">(Amounts of waste <span style="text-decoration:none; font-style:italic;">per day</span> and operating days <span style="text-decoration:none; font-style:italic;">per year</span>)</div></div>'
                 break;
             case 3: 
-                title.innerHTML='Results'
+                title.innerHTML='<div style="text-decoration:underline;">Results</div>'
                 break;
         }
     }

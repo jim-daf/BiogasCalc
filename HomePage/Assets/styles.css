@@ -72,7 +72,7 @@
     
   }
   #biogasLogo{
-    width: 125px;
+    width: 122px;
     background-color: transparent;
     background-size: cover;
     
@@ -99,8 +99,10 @@
     text-align: center; 
     margin-bottom: 20px; 
     color: rgb(241, 235, 235);
-    font-size: 22px;
+    font-size: 18.5px;
+    
   }
+  
   input {
     padding: 10px;
     font-size: 15.5px;
@@ -151,9 +153,9 @@
     background-color: rgb(241, 235, 235);
     
   }
-  .pagination{
+  /*.pagination{
     float: right;
-  }
+  }*/
   button:hover {
     background-color: #1a2c4b;
     color: rgb(241, 235, 235);
@@ -165,6 +167,7 @@
     border: 1px solid;
     border-radius: 2.5px;
     font-size: 14px;
+    padding: none;
     
   }
   #nextBtn{
@@ -174,6 +177,7 @@
     padding: none;
     border: 1px solid;
     border-radius: 2.5px;
+    float: right;
     
     
   }
@@ -238,7 +242,7 @@
       
     }
     #title{
-      font-size: 20px;
+      font-size: 18.5px;
       
     }
     #results_tab{
@@ -263,7 +267,7 @@
       
     }
     #title{
-      font-size: 20px;
+      font-size: 18.5px;
     }
     
     .pagination_buttons{
