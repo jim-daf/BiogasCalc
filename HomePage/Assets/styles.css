@@ -127,6 +127,8 @@
     border-radius: 3.5px;
     color: black;
     background-color: rgb(241, 235, 235);
+    position: relative;
+    bottom: 10px;
     
   }
   .inputBtns:hover{
@@ -166,6 +168,7 @@
   }*/
   button:hover {
     background-color: #1a2c4b;
+    
     color: rgb(241, 235, 235);
   }
   
@@ -244,7 +247,9 @@
   }*/
   @media screen and (max-width:1800px) {
     
-    
+    .inputBtns{
+      width: 40%;
+    }
     #headtitle{
       font-size: 20px;
       
@@ -287,8 +292,9 @@
   @media screen and (max-width:1200px) {
     
     .inputBtns{
-      width: 55%;
+      width: 45%;
       font-size: 16px;
+      bottom: 0;
     }
     .pagination{
       float: none;
@@ -317,6 +323,14 @@
       transform: translateX(-15px);
     }
   }
+  @media screen and (max-width:1000px) {
+    
+    .inputBtns{
+      width: 50%;
+      
+    }
+    
+  }
   @media screen and (max-width:950px) {
 
     #regForm{
@@ -336,7 +350,11 @@
   }
   @media screen and (max-width:800px) {
 
-    
+    .inputBtns{
+      width: 55%;
+      font-size: 16px;
+      bottom: 0;
+    }
     #results_tab{
       width: 95%;
       transform: translate(2.5%);
@@ -372,7 +390,7 @@
       width: 97%;
     }
     .inputBtns{
-      width: 65%;
+      width: 50%;
     }
     #headtitle{
       font-size: 18px;
@@ -403,10 +421,14 @@
     }
     .inputBtns{
       max-width:220px ;
+      font-size: 14.5px;
     }
   }
   @media screen and (max-width:550px) {
-    
+    .inputBtns{
+      font-size: 14px;
+      width: 60%;
+    }
     #results_tab{
       width: 90%;
       transform: translate(5%);
