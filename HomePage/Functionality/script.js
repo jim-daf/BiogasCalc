@@ -223,16 +223,16 @@ function clickEventHandler(currentTab){
                 nextPrev(1)
                 clickEventHandler(currentTab+1)
                 if(window.location.hash=="#eng"){
-                    document.getElementById('biogas_res').innerHTML="<span style='color: black;'>Biogas production potential: </span> <span style='color: #33b864;text-decoration:none; font-style:italic; font-weight:bold;'>"+res[0]+"</span> <span style='color: black;'>m<sup>3</sup>/day</span>"
-                    document.getElementById('apof_ekp_CO2').innerHTML="<span style='color: black;'>Avoidance of CO2 emissions: </span><span style='color: #33b864;text-decoration:none; font-style:italic; font-weight:bold;'>"+res[1]+"</span> <span style='color: black;'>kg/year</span>"
-                    document.getElementById('kostos_kat').innerHTML="<span style='color: black;'>Construction cost: </span><span style='color: #33b864;text-decoration:none; font-style:italic; font-weight:bold;'>"+res[2]+"</span> <span style='color: black;'>€</span>"
-                    document.getElementById('kostos_leit').innerHTML="<span style='color: black;'>Operating cost: </span><span style='color: #33b864;text-decoration:none; font-style:italic; font-weight:bold;'>"+res[3]+"</span> <span style='color: black;'>€/year</span>"
+                    document.getElementById('biogas_res').innerHTML="<span style='color: white;'>Biogas production potential: </span> <span style='color: #33b864;text-decoration:none; font-style:italic; font-weight:bold;'>"+res[0]+"</span> <span style='color: white;'>m<sup>3</sup>/day</span>"
+                    document.getElementById('apof_ekp_CO2').innerHTML="<span style='color: white;'>Avoidance of CO2 emissions: </span><span style='color: #33b864;text-decoration:none; font-style:italic; font-weight:bold;'>"+res[1]+"</span> <span style='color: white;'>kg/year</span>"
+                    document.getElementById('kostos_kat').innerHTML="<span style='color: white;'>Construction cost: </span><span style='color: #33b864;text-decoration:none; font-style:italic; font-weight:bold;'>"+res[2]+"</span> <span style='color: white;'>€</span>"
+                    document.getElementById('kostos_leit').innerHTML="<span style='color: white;'>Operating cost: </span><span style='color: #33b864;text-decoration:none; font-style:italic; font-weight:bold;'>"+res[3]+"</span> <span style='color: white;'>€/year</span>"
                 }
                 if(window.location.hash=="#gr" || !window.location.hash){
-                    document.getElementById('biogas_res').innerHTML="<span style='color: black;'>Δυναμικό παραγωγής βιοαερίου: </span><span style='color: #33b864; text-decoration:none; font-style:italic; font-weight:bold;'>"+res[0]+"</span> <span style='color: black;'>m<sup>3</sup>/day</span>"
-                    document.getElementById('apof_ekp_CO2').innerHTML="<span style='color: black;'>Αποφυγή εκπομπών CO2:  </span><span style='color: #33b864; text-decoration:none; font-style:italic; font-weight:bold;'>"+res[1]+"</span> <span style='color: black;'>kg/year</span>"
-                    document.getElementById('kostos_kat').innerHTML="<span style='color: black;'>Κόστος κατασκευής:  </span><span style='color: #33b864; text-decoration:none; font-style:italic; font-weight:bold;'>"+res[2]+"</span> <span style='color: black;'>€</span>"
-                    document.getElementById('kostos_leit').innerHTML="<span style='color: black;'>Κόστος λειτουργίας:  </span><span style='color: #33b864; text-decoration:none; font-style:italic;  font-weight:bold;'>"+res[3]+"</span> <span style='color: black;'>€/year</span>"
+                    document.getElementById('biogas_res').innerHTML="<span style='color: white;'>Δυναμικό παραγωγής βιοαερίου: </span><span style='color: #33b864; text-decoration:none; font-style:italic; font-weight:bold;'>"+res[0]+"</span> <span style='color: white;'>m<sup>3</sup>/day</span>"
+                    document.getElementById('apof_ekp_CO2').innerHTML="<span style='color: white;'>Αποφυγή εκπομπών CO2:  </span><span style='color: #33b864; text-decoration:none; font-style:italic; font-weight:bold;'>"+res[1]+"</span> <span style='color: white;'>kg/year</span>"
+                    document.getElementById('kostos_kat').innerHTML="<span style='color: white;'>Κόστος κατασκευής:  </span><span style='color: #33b864; text-decoration:none; font-style:italic; font-weight:bold;'>"+res[2]+"</span> <span style='color: white;'>€</span>"
+                    document.getElementById('kostos_leit').innerHTML="<span style='color: white;'>Κόστος λειτουργίας:  </span><span style='color: #33b864; text-decoration:none; font-style:italic;  font-weight:bold;'>"+res[3]+"</span> <span style='color: white;'>€/year</span>"
                 }
                 // #33b864;
             }

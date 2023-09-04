@@ -58,8 +58,8 @@
   }
   
   #results_tab{
-    background-color: white;
-    border: 1px solid black;
+    background-color: #242526;
+    border: 1px solid white;
     width: 55%;
     
     transform: translateX(40%);
@@ -67,6 +67,8 @@
     bottom: 20px;
     
     margin-bottom: 20px;
+    border-radius: 3px;
+
   }
   #logo{
     
