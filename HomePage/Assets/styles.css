@@ -21,6 +21,7 @@
   }
   #headtitle{
     font-size: 22px;
+    color:  rgb(241, 235, 235);;
   }
   .line {
 
@@ -31,6 +32,7 @@
   }
   hr{
     width: 100%;
+    
   }
   #regForm {
     border: 2px solid white;
@@ -59,7 +61,11 @@
     background-color: white;
     border: 1px solid black;
     width: 55%;
-    transform: translate(40%);
+    
+    transform: translateX(40%);
+    position: relative;
+    bottom: 20px;
+    
     margin-bottom: 20px;
   }
   #logo{
@@ -295,6 +301,7 @@
     #results_tab{
       width: 70%;
       transform: translate(25%);
+      bottom: 0;
     }
     .results{
       text-align: left;

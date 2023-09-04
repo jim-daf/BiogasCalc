@@ -223,18 +223,18 @@ function clickEventHandler(currentTab){
                 nextPrev(1)
                 clickEventHandler(currentTab+1)
                 if(window.location.hash=="#eng"){
-                    document.getElementById('biogas_res').innerHTML="Biogas production potential: <span style='color: #33b864; font-weight:bold;'>"+res[0]+"</span> m<sup>3</sup>/day"
-                    document.getElementById('apof_ekp_CO2').innerHTML="Avoidance of CO2 emissions: <span style='color: #33b864; font-weight:bold;'>"+res[1]+"</span> kg/year"
-                    document.getElementById('kostos_kat').innerHTML="Construction cost: <span style='color: #33b864; font-weight:bold;'>"+res[2]+"</span> €"
-                    document.getElementById('kostos_leit').innerHTML="Operating cost: <span style='color: #33b864; font-weight:bold;'>"+res[3]+"</span> €/year"
+                    document.getElementById('biogas_res').innerHTML="<span style='color: black;'>Biogas production potential: </span> <span style='color: #33b864;text-decoration:none; font-style:italic; font-weight:bold;'>"+res[0]+"</span> <span style='color: black;'>m<sup>3</sup>/day</span>"
+                    document.getElementById('apof_ekp_CO2').innerHTML="<span style='color: black;'>Avoidance of CO2 emissions: </span><span style='color: #33b864;text-decoration:none; font-style:italic; font-weight:bold;'>"+res[1]+"</span> <span style='color: black;'>kg/year</span>"
+                    document.getElementById('kostos_kat').innerHTML="<span style='color: black;'>Construction cost: </span><span style='color: #33b864;text-decoration:none; font-style:italic; font-weight:bold;'>"+res[2]+"</span> <span style='color: black;'>€</span>"
+                    document.getElementById('kostos_leit').innerHTML="<span style='color: black;'>Operating cost: </span><span style='color: #33b864;text-decoration:none; font-style:italic; font-weight:bold;'>"+res[3]+"</span> <span style='color: black;'>€/year</span>"
                 }
                 if(window.location.hash=="#gr" || !window.location.hash){
-                    document.getElementById('biogas_res').innerHTML="Δυναμικό παραγωγής βιοαερίου: <span style='color: #33b864; font-weight:bold;'>"+res[0]+"</span> m<sup>3</sup>/day"
-                    document.getElementById('apof_ekp_CO2').innerHTML="Αποφυγή εκπομπών CO2: <span style='color: #33b864; font-weight:bold;'>"+res[1]+"</span> kg/year"
-                    document.getElementById('kostos_kat').innerHTML="Κόστος κατασκευής: <span style='color: #33b864; font-weight:bold;'>"+res[2]+"</span> €"
-                    document.getElementById('kostos_leit').innerHTML="Κόστος λειτουργίας: <span style='color: #33b864; font-weight:bold;'>"+res[3]+"</span> €/year"
+                    document.getElementById('biogas_res').innerHTML="<span style='color: black;'>Δυναμικό παραγωγής βιοαερίου: </span><span style='color: #33b864; text-decoration:none; font-style:italic; font-weight:bold;'>"+res[0]+"</span> <span style='color: black;'>m<sup>3</sup>/day</span>"
+                    document.getElementById('apof_ekp_CO2').innerHTML="<span style='color: black;'>Αποφυγή εκπομπών CO2:  </span><span style='color: #33b864; text-decoration:none; font-style:italic; font-weight:bold;'>"+res[1]+"</span> <span style='color: black;'>kg/year</span>"
+                    document.getElementById('kostos_kat').innerHTML="<span style='color: black;'>Κόστος κατασκευής:  </span><span style='color: #33b864; text-decoration:none; font-style:italic; font-weight:bold;'>"+res[2]+"</span> <span style='color: black;'>€</span>"
+                    document.getElementById('kostos_leit').innerHTML="<span style='color: black;'>Κόστος λειτουργίας:  </span><span style='color: #33b864; text-decoration:none; font-style:italic;  font-weight:bold;'>"+res[3]+"</span> <span style='color: black;'>€/year</span>"
                 }
-                
+                // #33b864;
             }
             
         }
@@ -401,7 +401,7 @@ function changeTitle(currentTab){
                 title.innerHTML='<div style="text-decoration:underline;">Select service</div>'
                 break;
             case 2: 
-                title.innerHTML='<div style="text-decoration:underline;">Provide the necessary data <div style="font-weight:normal; font-size:10px; text-decoration:none;">(Amounts of waste <span style="text-decoration:none; font-style:italic;">per day</span> and operating days <span style="text-decoration:none; font-style:italic;">per year</span>)</div></div>'
+                title.innerHTML='<div style="text-decoration:underline;">Provide the necessary data </div><div style="font-weight:normal; font-size:10px; text-decoration:none;">(Amounts of waste <span style="text-decoration:none; font-style:italic;">per day</span> and operating days <span style="text-decoration:none; font-style:italic;">per year</span>)</div>'
                 break;
             case 3: 
                 title.innerHTML='<div style="text-decoration:underline;">Results</div>'
