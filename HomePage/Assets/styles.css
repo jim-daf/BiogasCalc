@@ -422,11 +422,11 @@
       transform: translate(5%);
     }
     #prevBtn {
-      font-size: 13px;
+      font-size: 12px;
       padding: 8px 13px;
     }
     #nextBtn{
-      font-size: 13px;
+      font-size: 12px;
       padding: 8px 13px;
     }
     #regForm{
@@ -456,10 +456,12 @@
       
     }
     #nextBtn{
-      font-size: 12.5px;
+      font-size: 11.5px;
+      padding: 8px 9px;
     }
     #prevBtn{
-      font-size: 12.5px;
+      font-size: 11.5px;
+      padding: 8px 9px;
     }
     .items input{
       margin: 0; 
@@ -523,10 +525,10 @@
     }
     
     #nextBtn{
-      font-size: 12.5px;
+      font-size: 11px;
     }
     #prevBtn{
-      font-size: 12.5px;
+      font-size: 11px;
     }
     .results{
       font-size: 13px;
