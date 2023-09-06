@@ -177,6 +177,8 @@ function clickEventHandler(currentTab){
                 }else{
                     if(document.getElementById('metapoihsh').classList.contains('changeColor') && document.getElementById('ektr_businesses')){
                         document.getElementById('calc').removeChild(document.getElementById('numOfAnimals'))
+                        document.getElementById('calc').style.position = "relative"
+                        document.getElementById('calc').style.bottom = "15px"
                         document.getElementById("ektr_businesses").remove()
                         if(document.getElementById("meta_businesses")==null){
                             document.getElementById('fieldset').insertBefore(metaB_clone,document.getElementsByClassName("tab")[1])
@@ -190,6 +192,8 @@ function clickEventHandler(currentTab){
                     }else if(document.getElementById('ektrofi').classList.contains('changeColor') && document.getElementById('meta_businesses')){
                         if(!document.getElementById('calc').contains(document.getElementById('numOfAnimals'))){
                             document.getElementById('calc').insertBefore(numAnimals_clone,document.getElementById('calc').childNodes[0])
+                            document.getElementById('calc').style.position = "relative"
+                            document.getElementById('calc').style.bottom = "0px"
                         }
                         
                         document.getElementById('meta_businesses').remove()

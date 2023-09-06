@@ -83,17 +83,8 @@
     width: 122px;
     background-color: transparent;
     background-size: cover;
-    
-    
-    
-    
     filter: hue-rotate(180deg) invert(1) brightness(1.5);
-    
-    
     border-radius: 5px;
-
-   
-    
     align-self: center;
   }
   .results{
@@ -129,7 +120,6 @@
     background-color: rgb(241, 235, 235);
     position: relative;
     bottom: 10px;
-    
   }
   .inputBtns:hover{
     cursor: pointer;
@@ -182,15 +172,12 @@
     
   }
   #nextBtn{
-    
     color: black;
     font-size: 14px;
     padding: none;
     border: 1px solid;
-    border-radius: 2.5px;
+    border-radius: 3px;
     float: right;
-    
-    
   }
   #nextBtn:hover{
     color: rgb(241, 235, 235);
@@ -199,6 +186,7 @@
   #prevBtn:hover{
     background-color: #1a2c4b;
     color:rgb(241, 235, 235);
+    
   }
   
   /* Make circles that indicate the steps of the form: */
