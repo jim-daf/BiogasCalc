@@ -227,16 +227,16 @@ function clickEventHandler(currentTab){
                 nextPrev(1)
                 clickEventHandler(currentTab+1)
                 if(window.location.hash=="#eng"){
-                    document.getElementById('biogas_res').innerHTML="<span style='color: white;'>Biogas production potential: </span> <span style='color: #33b864;text-decoration:none; font-style:italic; font-weight:bold;'>"+res[0]+"</span> <span style='color: white;'>m<sup>3</sup>/day</span>"
-                    document.getElementById('apof_ekp_CO2').innerHTML="<span style='color: white;'>Avoidance of CO2 emissions: </span><span style='color: #33b864;text-decoration:none; font-style:italic; font-weight:bold;'>"+res[1]+"</span> <span style='color: white;'>kg/year</span>"
-                    document.getElementById('kostos_kat').innerHTML="<span style='color: white;'>Construction cost: </span><span style='color: #33b864;text-decoration:none; font-style:italic; font-weight:bold;'>"+res[2]+"</span> <span style='color: white;'>€</span>"
-                    document.getElementById('kostos_leit').innerHTML="<span style='color: white;'>Operating cost: </span><span style='color: #33b864;text-decoration:none; font-style:italic; font-weight:bold;'>"+res[3]+"</span> <span style='color: white;'>€/year</span>"
+                    document.getElementById('biogas_res').innerHTML="<span class='resultsTabText'>Biogas production potential: </span> <span class='resultsTabSpecialText'  >"+res[0]+"</span> <span class='resultsTabText'  >m<sup>3</sup>/day</span>"
+                    document.getElementById('apof_ekp_CO2').innerHTML="<span class='resultsTabText' >Avoidance of CO2 emissions: </span><span class='resultsTabSpecialText'  >"+res[1]+"</span> <span class='resultsTabText'  >kg/year</span>"
+                    document.getElementById('kostos_kat').innerHTML="<span class='resultsTabText'  >Construction cost: </span><span class='resultsTabSpecialText'  >"+res[2]+"</span> <span class='resultsTabText'  >€</span>"
+                    document.getElementById('kostos_leit').innerHTML="<span class='resultsTabText'  >Operating cost: </span><span class='resultsTabSpecialText'  >"+res[3]+"</span> <span class='resultsTabText'  >€/year</span>"
                 }
                 if(window.location.hash=="#gr" || !window.location.hash){
-                    document.getElementById('biogas_res').innerHTML="<span style='color: white;'>Δυναμικό παραγωγής βιοαερίου: </span><span style='color: #33b864; text-decoration:none; font-style:italic; font-weight:bold;'>"+res[0]+"</span> <span style='color: white;'>m<sup>3</sup>/day</span>"
-                    document.getElementById('apof_ekp_CO2').innerHTML="<span style='color: white;'>Αποφυγή εκπομπών CO2:  </span><span style='color: #33b864; text-decoration:none; font-style:italic; font-weight:bold;'>"+res[1]+"</span> <span style='color: white;'>kg/year</span>"
-                    document.getElementById('kostos_kat').innerHTML="<span style='color: white;'>Κόστος κατασκευής:  </span><span style='color: #33b864; text-decoration:none; font-style:italic; font-weight:bold;'>"+res[2]+"</span> <span style='color: white;'>€</span>"
-                    document.getElementById('kostos_leit').innerHTML="<span style='color: white;'>Κόστος λειτουργίας:  </span><span style='color: #33b864; text-decoration:none; font-style:italic;  font-weight:bold;'>"+res[3]+"</span> <span style='color: white;'>€/year</span>"
+                    document.getElementById('biogas_res').innerHTML="<span class='resultsTabText'  >Δυναμικό παραγωγής βιοαερίου: </span><span class='resultsTabSpecialText'  >"+res[0]+"</span> <span class='resultsTabText'  >m<sup>3</sup>/day</span>"
+                    document.getElementById('apof_ekp_CO2').innerHTML="<span class='resultsTabText'  >Αποφυγή εκπομπών CO2:  </span><span class='resultsTabSpecialText'  >"+res[1]+"</span> <span class='resultsTabText'  >kg/year</span>"
+                    document.getElementById('kostos_kat').innerHTML="<span class='resultsTabText'  >Κόστος κατασκευής:  </span><span class='resultsTabSpecialText'  >"+res[2]+"</span> <span class='resultsTabText'  >€</span>"
+                    document.getElementById('kostos_leit').innerHTML="<span class='resultsTabText'  >Κόστος λειτουργίας:  </span><span class='resultsTabSpecialText' >"+res[3]+"</span> <span class='resultsTabText'  >€/year</span>"
                 }
                 // #33b864;
             }

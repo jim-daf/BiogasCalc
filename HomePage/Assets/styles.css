@@ -58,8 +58,12 @@
   }
   
   #results_tab{
-    background-color: #242526;
-    border: 1px solid white;
+    /* background-color: #242526;
+    background-color: #1a2c4b;
+    background-color: #242526;*/
+    background-color: white;
+    
+    border: 1px solid black;
     width: 55%;
     
     transform: translateX(40%);
@@ -69,6 +73,16 @@
     margin-bottom: 20px;
     border-radius: 3px;
 
+  }
+  .resultsTabText{
+    color: black;
+  }
+  .resultsTabSpecialText{
+    color: #33b864; 
+    
+    text-decoration:none; 
+    font-style:italic; 
+    font-weight:bold;
   }
   #logo{
     
@@ -224,7 +238,7 @@
   }
 
   .restart-symbol{
-    font-size: 13.5px;
+    font-size: 13px;
     margin: 0;
     padding: 0;
     line-height: 1;
