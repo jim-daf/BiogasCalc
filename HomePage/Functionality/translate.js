@@ -22,8 +22,6 @@ var dataReload=document.querySelectorAll("[data-reload]")
             result2:"Avoidance of CO2 emissions",
             result3:"Construction cost",
             result4:"Operating costs",
-            table_headtitle1:"Title",
-            table_headtitle2:"Result",
             previous:"« Previous",
             home:"Home",
             visitSite:"Visit our website",
@@ -58,8 +56,6 @@ var dataReload=document.querySelectorAll("[data-reload]")
             result2:"Αποφυγή εκπομπών CO2",
             result3:"Κόστος κατασκευής",
             result4:"Κόστος λειτουργίας",
-            table_headtitle1:"Τίτλος",
-            table_headtitle2:"Αποτέλεσμα",
             previous:"« Προηγούμενο",
             home:"Αρχική",
             visitSite:"Επισκεφθείτε την ιστοσελίδα μας",
@@ -113,8 +109,7 @@ function setLanguage(language) {
             result2.textContent=languages.eng.result2
             result3.textContent=languages.eng.result3
             result4.textContent=languages.eng.result4
-            table_headtitle1.textContent=languages.eng.table_headtitle1
-            table_headtitle2.textContent=languages.eng.table_headtitle2
+            
         }
         if (language === 'gr') {
             headtitle.textContent = languages.gr.headtitle;
@@ -148,8 +143,7 @@ function setLanguage(language) {
             result2.textContent=languages.gr.result2
             result3.textContent=languages.gr.result3
             result4.textContent=languages.gr.result4
-            table_headtitle1.textContent=languages.gr.table_headtitle1
-            table_headtitle2.textContent=languages.gr.table_headtitle2
+            
 
         }
     }
