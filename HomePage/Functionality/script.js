@@ -408,7 +408,7 @@ function changeTitle(currentTab){
                 title.innerHTML='<div style="text-decoration:underline;">Provide the necessary data </div><div style="font-weight:normal; font-size:10px; text-decoration:none;">(Amounts of waste <span style="text-decoration:none; font-style:italic;">per day</span> and operating days <span style="text-decoration:none; font-style:italic;">per year</span>)</div>'
                 break;
             case 3: 
-                title.innerHTML='<div style="text-decoration:underline;">Results</div>'
+                title.innerHTML='<div style="text-decoration:underline;">Results table</div>'
                 break;
         }
     }
