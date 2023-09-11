@@ -61,12 +61,12 @@
     /* background-color: #242526;
     background-color: #1a2c4b;
     background-color: #242526;*/
-    background-color: white;
+    
     
     border: 1px solid black;
-    width: 55%;
+    width: 70%;
     
-    transform: translateX(40%);
+    transform: translateX(22%);
     position: relative;
     bottom: 7.5px;
     
@@ -105,7 +105,7 @@
     color: black;
     text-align: left;
     margin-left:5px;
-    font-size: 16px;
+    font-size: 15px;
   }
   
   #title {
@@ -247,6 +247,49 @@
   /*.items label{
     visibility: hidden;
   }*/
+
+/* Table */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 0;
+  align-items: left;
+  text-align: left;
+  justify-content: left;
+  table-layout: fixed;
+}
+
+td,
+th {
+  text-align: left;
+  border: 1px solid #ddd;
+  
+  font-size: 15px;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: normal;
+  background-color: #242526;
+  padding: 10px 10px;
+}
+
+td {
+  background-color: #dddddd;
+  border: 2px solid #ccc;
+  color: #000;
+  padding: 10px 10px;
+  
+}
+
+
+.table-container {
+  overflow-x: auto; /* Enable horizontal scrolling if table overflows */
+  max-width: 100%; /* Ensure the container doesn't exceed its parent's width */
+}
+
+
   @media screen and (max-width:1800px) {
     
     .inputBtns{
@@ -261,8 +304,8 @@
       
     }
     #results_tab{
-      width: 60%;
-      transform: translate(35%);
+      width: 70%;
+      transform: translate(22%);
     }
     .results{
       text-align: left;
@@ -309,10 +352,11 @@
       
     }
     #results_tab{
-      width: 70%;
-      transform: translate(25%);
+      width: 80%;
+      transform: translate(12.5%);
       bottom: 0;
     }
+    
     .results{
       text-align: left;
       margin-left: 5px;
@@ -384,7 +428,9 @@
       display: block;
       justify-content: center;
     }
-    
+    td,th{
+      padding: 5px 5px;
+    }
   }
 
   @media screen and (max-width:700px) {
@@ -401,10 +447,7 @@
     #title{
       font-size: 18px;
     }
-    #results_tab{
-      width: 80%;
-      transform: translate(15%);
-    }
+    
     .results{
       text-align: left;
       margin-left: 5px;
@@ -431,10 +474,7 @@
       font-size: 14px;
       width: 60%;
     }
-    #results_tab{
-      width: 90%;
-      transform: translate(5%);
-    }
+    
     #prevBtn {
       font-size: 12px;
       padding: 8px 13px;
@@ -456,10 +496,7 @@
       font-size: 13.5px;
     }
     
-    #results_tab{
-      width: 100%;
-      transform: translate(0%);
-    }
+    
     .results{
       
       font-size: 13px;
@@ -515,12 +552,15 @@
     }
     .results{
       
-      font-size: 13px;
+      font-size: 12px;
     }
     .restart-symbol{
       font-size: 13px;
     }
-
+    #results_tab{
+      width: 100%;
+      transform: translate(0%);
+    }
     
   }
   @media screen and (max-width:400px) {
@@ -545,12 +585,9 @@
       font-size: 11px;
     }
     .results{
-      font-size: 13px;
+      font-size: 10px;
     }
-    #results_tab{
-      width: 120%;
-      transform: translate(-7.5%);
-    }
+    
     .restart-symbol{
       font-size: 12px;
     }

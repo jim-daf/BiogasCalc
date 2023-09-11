@@ -22,6 +22,8 @@ var dataReload=document.querySelectorAll("[data-reload]")
             result2:"Avoidance of CO2 emissions:",
             result3:"Construction cost:",
             result4:"Operating costs:",
+            table_headtitle1:"Title",
+            table_headtitle2:"Result",
             previous:"« Previous",
             home:"Home",
             visitSite:"Visit our website",
@@ -33,7 +35,8 @@ var dataReload=document.querySelectorAll("[data-reload]")
             fewWordsAboutApp:"A few words about the application",
             socialMedia:"Find us in Social Media",
             grmanual:"Greek Version",
-            engmanual:"English Version"
+            engmanual:"English Version",
+            
         },
         gr:{
             headtitle:"Υπολογισμός CO2 & Βιοαερίου",
@@ -55,6 +58,8 @@ var dataReload=document.querySelectorAll("[data-reload]")
             result2:"Αποφυγή εκπομπών CO2:",
             result3:"Κόστος κατασκευής:",
             result4:"Κόστος λειτουργίας:",
+            table_headtitle1:"Τίτλος",
+            table_headtitle2:"Αποτέλεσμα",
             previous:"« Προηγούμενο",
             home:"Αρχική",
             visitSite:"Επισκεφθείτε την ιστοσελίδα μας",
@@ -66,7 +71,8 @@ var dataReload=document.querySelectorAll("[data-reload]")
             fewWordsAboutApp: "Λιγα λογια για την εφαρμογη",
             socialMedia:"Βρειτε μας στα Social Media",
             grmanual:"Στα Ελληνικά",
-            engmanual:"Στα Αγγλικά"
+            engmanual:"Στα Αγγλικά",
+            
 
         }
 }
@@ -103,7 +109,12 @@ function setLanguage(language) {
             socialMedia.textContent = languages.eng.socialMedia
             grmanual.textContent = languages.eng.grmanual
             engmanual.textContent = languages.eng.engmanual
-            
+            result1.textContent=languages.eng.result1
+            result2.textContent=languages.eng.result2
+            result3.textContent=languages.eng.result3
+            result4.textContent=languages.eng.result4
+            table_headtitle1.textContent=languages.eng.table_headtitle1
+            table_headtitle2.textContent=languages.eng.table_headtitle2
         }
         if (language === 'gr') {
             headtitle.textContent = languages.gr.headtitle;
@@ -133,6 +144,13 @@ function setLanguage(language) {
             socialMedia.textContent = languages.gr.socialMedia
             grmanual.textContent = languages.gr.grmanual
             engmanual.textContent = languages.gr.engmanual
+            result1.textContent=languages.gr.result1
+            result2.textContent=languages.gr.result2
+            result3.textContent=languages.gr.result3
+            result4.textContent=languages.gr.result4
+            table_headtitle1.textContent=languages.gr.table_headtitle1
+            table_headtitle2.textContent=languages.gr.table_headtitle2
+
         }
     }
 

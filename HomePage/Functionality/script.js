@@ -227,16 +227,16 @@ function clickEventHandler(currentTab){
                 nextPrev(1)
                 clickEventHandler(currentTab+1)
                 if(window.location.hash=="#eng"){
-                    document.getElementById('biogas_res').innerHTML="<span class='resultsTabText'>Biogas production potential: </span> <span class='resultsTabSpecialText'  >"+res[0]+"</span> <span class='resultsTabText'  >m<sup>3</sup>/day</span>"
-                    document.getElementById('apof_ekp_CO2').innerHTML="<span class='resultsTabText' >Avoidance of CO2 emissions: </span><span class='resultsTabSpecialText'  >"+res[1]+"</span> <span class='resultsTabText'  >kg/year</span>"
-                    document.getElementById('kostos_kat').innerHTML="<span class='resultsTabText'  >Construction cost: </span><span class='resultsTabSpecialText'  >"+res[2]+"</span> <span class='resultsTabText'  >€</span>"
-                    document.getElementById('kostos_leit').innerHTML="<span class='resultsTabText'  >Operating cost: </span><span class='resultsTabSpecialText'  >"+res[3]+"</span> <span class='resultsTabText'  >€/year</span>"
+                    document.getElementById('biogas_res').innerHTML="<span class='resultsTabSpecialText'  >"+res[0]+"</span> <span class='resultsTabText'  >m<sup>3</sup>/day</span>"
+                    document.getElementById('apof_ekp_CO2').innerHTML="<span class='resultsTabSpecialText'  >"+res[1]+"</span> <span class='resultsTabText'  >kg/year</span>"
+                    document.getElementById('kostos_kat').innerHTML="<span class='resultsTabSpecialText'  >"+res[2]+"</span> <span class='resultsTabText'  >€</span>"
+                    document.getElementById('kostos_leit').innerHTML="<span class='resultsTabSpecialText'  >"+res[3]+"</span> <span class='resultsTabText'  >€/year</span>"
                 }
                 if(window.location.hash=="#gr" || !window.location.hash){
-                    document.getElementById('biogas_res').innerHTML="<span class='resultsTabText'  >Δυναμικό παραγωγής βιοαερίου: </span><span class='resultsTabSpecialText'  >"+res[0]+"</span> <span class='resultsTabText'  >m<sup>3</sup>/day</span>"
-                    document.getElementById('apof_ekp_CO2').innerHTML="<span class='resultsTabText'  >Αποφυγή εκπομπών CO2:  </span><span class='resultsTabSpecialText'  >"+res[1]+"</span> <span class='resultsTabText'  >kg/year</span>"
-                    document.getElementById('kostos_kat').innerHTML="<span class='resultsTabText'  >Κόστος κατασκευής:  </span><span class='resultsTabSpecialText'  >"+res[2]+"</span> <span class='resultsTabText'  >€</span>"
-                    document.getElementById('kostos_leit').innerHTML="<span class='resultsTabText'  >Κόστος λειτουργίας:  </span><span class='resultsTabSpecialText' >"+res[3]+"</span> <span class='resultsTabText'  >€/year</span>"
+                    document.getElementById('biogas_res').innerHTML="<span class='resultsTabSpecialText'  >"+res[0]+"</span> <span class='resultsTabText'  >m<sup>3</sup>/day</span>"
+                    document.getElementById('apof_ekp_CO2').innerHTML="<span class='resultsTabSpecialText'  >"+res[1]+"</span> <span class='resultsTabText'  >kg/year</span>"
+                    document.getElementById('kostos_kat').innerHTML="<span class='resultsTabSpecialText'  >"+res[2]+"</span> <span class='resultsTabText'  >€</span>"
+                    document.getElementById('kostos_leit').innerHTML="<span class='resultsTabSpecialText' >"+res[3]+"</span> <span class='resultsTabText'  >€/year</span>"
                 }
                 // #33b864;
             }
@@ -393,7 +393,7 @@ function changeTitle(currentTab){
                 title.innerHTML='<div style="text-decoration:underline;">Δώστε τα απαραίτητα δεδομένα </div><div  style="font-weight:normal; font-size:10px; text-decoration:none;">(Ποσότητες αποβλήτων <span style="text-decoration:none; font-style:italic;">ημερισίως</span> και ημέρες λειτουργίας <span style="text-decoration:none; font-style:italic;">ετησίως</span>)</div>'
                 break;
             case 3: 
-                title.innerHTML='<div style="text-decoration:underline;">Αποτελέσματα</div>'
+                title.innerHTML='<div style="text-decoration:underline;">Πίνακας αποτελεσμάτων</div>'
                 break;
         }
     }else if(window.location.hash=="#eng" && window.location.hash){
