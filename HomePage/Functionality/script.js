@@ -390,7 +390,7 @@ function changeTitle(currentTab){
                 title.innerHTML='<div style="text-decoration:underline;">Επιλέξτε επιχείρηση</div>'
                 break;
             case 2: 
-                title.innerHTML='<div style="text-decoration:underline;">Δώστε τα απαραίτητα δεδομένα </div><div  style="font-weight:normal; font-size:10px; text-decoration:none;">(Ποσότητες αποβλήτων <span style="text-decoration:none; font-style:italic;">ημερισίως</span> και ημέρες λειτουργίας <span style="text-decoration:none; font-style:italic;">ετησίως</span>)</div>'
+                title.innerHTML='<div style="text-decoration:underline;">Δώστε τα απαραίτητα δεδομένα </div><div class="noteForInputs" style="font-weight:normal;  text-decoration:none;">(Ποσότητες αποβλήτων <span style="text-decoration:none; font-style:italic;">ημερισίως</span> και ημέρες λειτουργίας <span style="text-decoration:none; font-style:italic;">ετησίως</span>)</div>'
                 break;
             case 3: 
                 title.innerHTML='<div style="text-decoration:underline;">Πίνακας αποτελεσμάτων</div>'
@@ -405,7 +405,7 @@ function changeTitle(currentTab){
                 title.innerHTML='<div style="text-decoration:underline;">Select service</div>'
                 break;
             case 2: 
-                title.innerHTML='<div style="text-decoration:underline;">Provide the necessary data </div><div style="font-weight:normal; font-size:10px; text-decoration:none;">(Amounts of waste <span style="text-decoration:none; font-style:italic;">per day</span> and operating days <span style="text-decoration:none; font-style:italic;">per year</span>)</div>'
+                title.innerHTML='<div style="text-decoration:underline;">Provide the necessary data </div><div class="noteForInputs" style="font-weight:normal;  text-decoration:none;">(Amounts of waste <span style="text-decoration:none; font-style:italic;">per day</span> and operating days <span style="text-decoration:none; font-style:italic;">per year</span>)</div>'
                 break;
             case 3: 
                 title.innerHTML='<div style="text-decoration:underline;">Results table</div>'
