@@ -15,7 +15,7 @@ var dataReload=document.querySelectorAll("[data-reload]")
             service7:"Pork",
             service8:"Dairy Cattle",
             service9:"Beef Cattle",
-            input1:"Enter number of animals",
+            //input1:"Enter number of animals",
             input2:"Enter waste quantities",
             input3:"Enter days of operation",
             result1:"Biogas production potential",
@@ -49,7 +49,7 @@ var dataReload=document.querySelectorAll("[data-reload]")
             service7:"Χοιρινών",
             service8:"Βοοειδών Γαλακτοπαραγωγής",
             service9:"Βοοειδών Κρεατοπαραγωγής",
-            input1:"Εισάγετε αριθμό ζώων",
+            //input1:"Εισάγετε αριθμό ζώων",
             input2:"Εισάγετε ποσότητες αποβλήτων",
             input3:"Εισάγετε ημέρες λειτουργίας",
             result1:"Δυναμικό παραγωγής βιοαερίου",
@@ -90,7 +90,7 @@ function setLanguage(language) {
             xoirina.value = languages.eng.service7
             vooeidi_gal.value = languages.eng.service8
             vooeidi_kreat.value = languages.eng.service9
-            numAnimals.placeholder = languages.eng.input1
+            //numAnimals.placeholder = languages.eng.input1
             posotites.placeholder = languages.eng.input2+posotites.placeholder
             hmeresleit.placeholder = languages.eng.input3
             prevBtn.textContent = languages.eng.previous
@@ -124,7 +124,7 @@ function setLanguage(language) {
             xoirina.value = languages.gr.service7
             vooeidi_gal.value = languages.gr.service8
             vooeidi_kreat.value = languages.gr.service9
-            numAnimals.placeholder = languages.gr.input1
+            //numAnimals.placeholder = languages.gr.input1
             posotites.placeholder = languages.gr.input2+posotites.placeholder
             hmeresleit.placeholder = languages.gr.input3
             prevBtn.textContent = languages.gr.previous

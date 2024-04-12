@@ -1,7 +1,7 @@
 
 var ektrB_clone=document.getElementById("ektr_businesses").cloneNode(true)
 var metaB_clone=document.getElementById("meta_businesses").cloneNode(true)
-var numAnimals_clone=document.getElementById('numOfAnimals').cloneNode(true)
+//var numAnimals_clone=document.getElementById('numOfAnimals').cloneNode(true)
 var title=document.getElementById('title')
 var Y;
 var QBGd; //Ημερήσια Παραγωγή Βιοαερίου
@@ -176,7 +176,7 @@ function clickEventHandler(currentTab){
                     console.log("invalid")
                 }else{
                     if(document.getElementById('metapoihsh').classList.contains('changeColor') && document.getElementById('ektr_businesses')){
-                        document.getElementById('calc').removeChild(document.getElementById('numOfAnimals'))
+                        //document.getElementById('calc').removeChild(document.getElementById('numOfAnimals'))
                         document.getElementById('calc').style.position = "relative"
                         document.getElementById('calc').style.bottom = "15px"
                         document.getElementById("ektr_businesses").remove()
@@ -190,12 +190,13 @@ function clickEventHandler(currentTab){
                         
                         
                     }else if(document.getElementById('ektrofi').classList.contains('changeColor') && document.getElementById('meta_businesses')){
-                        if(!document.getElementById('calc').contains(document.getElementById('numOfAnimals'))){
-                            document.getElementById('calc').insertBefore(numAnimals_clone,document.getElementById('calc').childNodes[0])
-                            document.getElementById('calc').style.position = "relative"
-                            document.getElementById('calc').style.bottom = "0px"
+                        /*if(!document.getElementById('calc').contains(document.getElementById('numOfAnimals'))){
+                            
                         }
-                        
+                        */
+                        //document.getElementById('calc').insertBefore(numAnimals_clone,document.getElementById('calc').childNodes[0])
+                        document.getElementById('calc').style.position = "relative"
+                        document.getElementById('calc').style.bottom = "0px"
                         document.getElementById('meta_businesses').remove()
                         if(document.getElementById("ektr_businesses")==null){
                             
@@ -370,7 +371,7 @@ function ypologismos(){
         OPEX_labor=0;
     }
     var OPEX=OPEX_electr+OPEX_mech+OPEX_monitor+OPEX_labor
-    return [QBGd,GHG.toFixed(3),CAPEX.toFixed(3),OPEX.toFixed(3)]
+    return [QBGd,GHG.toFixed(0),CAPEX.toFixed(0),OPEX.toFixed(0)]
 
     
 }
