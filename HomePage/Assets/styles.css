@@ -150,15 +150,15 @@
   .inputBtns:hover{
     cursor: pointer;
     /*opacity: 0.8;*/
-    background-color: #242526;
+    background-color: #384152;
     border: 1px solid white;
     color: rgb(241, 235, 235);
   }
   /* on click */
   .changeColor{
-    background-color: #242526;
+    background-color: #384152;
     color: rgb(241, 235, 235);
-    
+    border: 1px solid white;
   }
   
   /* Mark input boxes that gets an error on validation: */
@@ -185,7 +185,7 @@
     float: right;
   }*/
   button:hover {
-    background-color: #242526;
+    background-color: #1f242e;
     
     color: rgb(241, 235, 235);
   }
@@ -212,7 +212,7 @@
   }
   
   #prevBtn:hover{
-    background-color: #242526;
+    background-color: #1f242e;
     color:rgb(241, 235, 235);
     
   }
