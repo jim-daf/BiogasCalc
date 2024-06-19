@@ -108,7 +108,9 @@
     margin-left:5px;
     font-size: 15px;
   }
-  
+  #pdfLink :hover{
+    cursor: pointer;
+  }
   #title {
     text-align: center; 
     margin-bottom: 20px; 

@@ -11,6 +11,16 @@ var VDG;
 var dataReload=document.querySelectorAll("[data-reload]")
 document.getElementsByClassName("step")[currentTab].classList.add('current');
 
+var pdfLink=document.getElementById("pdfLink")
+
+// Add a click event listener to the link or button
+pdfLink.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent the default link behavior
+  
+    // Create a new window or tab and open the PDF
+    window.open('images/poster.pdf', '_blank');
+  });
+
 showTab(currentTab); // Display the current tab
 
 clickEventHandler(currentTab) // Handle click events
