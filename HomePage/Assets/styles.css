@@ -133,7 +133,7 @@
     font-family:   'Trebuchet MS', sans-serif;
   }
   input:focus {
-    border: 1px solid #4472c4;
+    border: 1px solid white;
   }
   .inputBtns{
     margin: 0 auto;
@@ -150,14 +150,15 @@
   .inputBtns:hover{
     cursor: pointer;
     /*opacity: 0.8;*/
-    background-color: #384152;
+    background-color: #242526;
     border: 1px solid white;
     color: rgb(241, 235, 235);
   }
   /* on click */
   .changeColor{
-    background-color: #384152;
+    background-color: #242526;
     color: rgb(241, 235, 235);
+    
   }
   
   /* Mark input boxes that gets an error on validation: */
@@ -184,7 +185,7 @@
     float: right;
   }*/
   button:hover {
-    background-color: #384152;
+    background-color: #242526;
     
     color: rgb(241, 235, 235);
   }
@@ -211,7 +212,7 @@
   }
   
   #prevBtn:hover{
-    background-color: #384152;
+    background-color: #242526;
     color:rgb(241, 235, 235);
     
   }
