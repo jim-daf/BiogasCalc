@@ -79,10 +79,10 @@
     color: black;
   }
   .resultsTabSpecialText{
-    color: #33b864; 
+    color: #0b1824; 
     
     text-decoration:none; 
-    font-style:italic; 
+    font-style:normal; 
     font-weight:bold;
   }
   #logo{
